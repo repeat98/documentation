@@ -1,1 +1,4 @@
 Hoher Zeitaufwand
+Limitierter Tagging-Prozess
+Inkonsistenz bei der Verwaltung
+Unzureichende Analyse

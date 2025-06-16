@@ -2,7 +2,7 @@
 
 ## Gliederung der Dokumentation
 
-### 1. **Projektübersicht**
+### 1. **Einführung**
 - Zusammenfassung der Problemstellung und Lösungsansatz
 - Kernziele des Projekts
 - Methodisches Vorgehen im Überblick
