@@ -1,0 +1,194 @@
+// Sidebar.scss
+
+.Sidebar {
+  width: 256px;
+  align-self: stretch; // This is fine if Sidebar is a flex item in its parent.
+  background: #1C1C1C;
+  overflow: hidden; // This will clip content if Sidebar is not tall enough.
+                    // Consider `overflow-y: auto;` for the .Menu if content might exceed space.
+  flex-direction: column;
+  justify-content: flex-start; // Aligns children to the top
+  align-items: stretch;       // MODIFIED: Ensures children stretch to full width by default
+  display: flex;
+  box-sizing: border-box;    // Good practice
+  // -webkit-app-region: drag; // REMOVE - Sidebar itself is not draggable
+}
+
+.Sidebar .WindowControlsOuter { 
+  align-self: stretch;
+  height: 52px;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start; // This should be center if WindowControlsInner is to be centered
+  align-items: flex-start;   // This should be center or stretch if WindowControlsInner is to be centered/full-width
+  display: flex;
+  -webkit-app-region: drag; // MAKE THIS AREA DRAGGABLE
+  // Add padding or direct alignment for WindowControlsInner if needed
+  // e.g., padding-left: 12px; to align with trafficLightPosition from main.js if x was 12 relative to sidebar start
+}
+
+.Sidebar .WindowControlsOuter .WindowControlsInner {
+  height: 52px; // It can take full height of its parent
+  padding-left: 24px; // Original padding
+  padding-right: 24px;
+  justify-content: flex-start;
+  align-items: center; // Vertically center the buttons
+  gap: 8px;
+  display: flex;
+  -webkit-app-region: no-drag; // IMPORTANT: The container of buttons is no-drag
+}
+
+// Ensure individual buttons are also no-drag, though parent container might cover it.
+.Sidebar .WindowControlsOuter .WindowControlsInner .Close,
+.Sidebar .WindowControlsOuter .WindowControlsInner .Minimize,
+.Sidebar .WindowControlsOuter .WindowControlsInner .Zoom {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  border-radius: 100px;
+  border: 0.50px rgba(0, 0, 0, 0.20) solid;
+  -webkit-app-region: no-drag; // Explicitly make buttons clickable
+  cursor: pointer; // Indicate they are clickable
+}
+.Sidebar .WindowControlsOuter .WindowControlsInner .Close { background: #FF5F57; }
+.Sidebar .WindowControlsOuter .WindowControlsInner .Minimize { background: #FEBC2E; }
+.Sidebar .WindowControlsOuter .WindowControlsInner .Zoom { background: #28C840; }
+
+.Sidebar .Menu {
+  align-self: stretch;
+  flex: 1 1 0; // This makes the Menu take up available vertical space
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+  overflow-y: auto; // Add this if menu content itself can be scrollable
+  overflow-x: hidden;
+}
+
+.Sidebar .Menu .MenuCategory {
+  align-self: stretch;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  overflow: hidden; // Be cautious with overflow here if content is dynamic
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Sidebar .Menu .MenuCategory .CategoryLabelWrapper {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+}
+
+.Sidebar .Menu .MenuCategory .Label {
+  width: auto;
+  color: #DADADA;
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+
+.Sidebar .Menu .MenuCategory .AddButton {
+  background: transparent;
+  border: none;
+  color: #8A8A8A;
+  cursor: pointer;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.Sidebar .Menu .MenuCategory .AddButton:hover {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.Sidebar .Menu .MenuCategory .AddButton:active {
+  background-color: #444444;
+}
+
+.Sidebar .Menu .MenuCategory .AddButton .AddIconSymbol {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.Sidebar .Menu .Divider {
+  align-self: stretch;
+  height: 2px;
+  background: #292929;
+  margin: 8px 24px; // This margin is inside the Menu
+  flex-shrink: 0;
+}
+
+.Sidebar .LogoContainer {
+  align-self: stretch;
+  padding: 16px 24px; // Padding defines its minimum height
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-shrink: 0; // Prevent this from shrinking
+  box-sizing: border-box;
+}
+
+.Sidebar .LogoContainer .LogoWrapper {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.Sidebar .LogoContainer .LogoWrapper .Logo {
+  width: 18px;
+  height: 17px;
+  border-radius: 5px;
+  border: 4px #FF5A16 solid; // This should be visible if LogoContainer is.
+}
+
+.Sidebar .LogoContainer .LogoWrapper .LogoText {
+  width: auto; // Let it size to content
+  height: 20px;
+  color: #DADADA;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.Sidebar .LogoContainer .IconSettings {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: hidden; // If .Vector is larger, it will be clipped
+  cursor: pointer;
+}
+
+.Sidebar .LogoContainer .IconSettings .Vector {
+  width: 14.28px;
+  height: 15px;
+  left: 1.86px;
+  top: 1.50px;
+  position: absolute;
+  background: #696969; // This will render as a grey rectangle.
+                       // For an actual icon, use SVG, an icon font, or mask-image.
+}

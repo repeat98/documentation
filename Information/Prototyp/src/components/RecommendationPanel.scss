@@ -1,0 +1,146 @@
+.RecommendationPanel {
+  background-color: #181818;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .RecommendationsList {
+    max-height: calc(40vh - 120px); /* Adjust based on header/padding */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* Custom scrollbar for a cleaner look */
+  .RecommendationsList::-webkit-scrollbar {
+    width: 8px;
+  }
+  .RecommendationsList::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .RecommendationsList::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+  }
+  .RecommendationsList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .RecommendationItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #282828;
+
+      .TrackActions {
+        opacity: 1;
+      }
+    }
+
+    .TrackDetails {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
+
+      .TrackInfo {
+        flex: 1;
+        min-width: 0;
+
+        .TrackTitle {
+          font-weight: 500;
+          color: #fff;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .TrackArtist {
+          color: #aaa;
+          font-size: 0.85rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .SimilarityScore {
+        font-size: 0.8rem;
+        color: #b3b3b3;
+        background-color: #333;
+        padding: 3px 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+      }
+
+      .WaveformContainer {
+        width: 300px;
+        min-width: 200px;
+      }
+    }
+
+    .TrackActions {
+      display: flex;
+      gap: 10px;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+
+      button {
+        background-color: transparent;
+        border: 1px solid #555;
+        color: #aaa;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+          transform: scale(1.1);
+        }
+      }
+
+      .AcceptButton:hover {
+        color: #28a745;
+        border-color: #28a745;
+      }
+
+      .RejectButton:hover {
+        color: #dc3545;
+        border-color: #dc3545;
+      }
+    }
+  }
+
+  .RecommendationPanelLoading,
+  .RecommendationPanelEmpty {
+    color: #888;
+    text-align: center;
+    padding: 40px 20px;
+    font-style: italic;
+  }
+} 

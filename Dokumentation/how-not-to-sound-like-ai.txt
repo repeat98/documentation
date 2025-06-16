@@ -1,0 +1,9 @@
+
+* **Übermäßiger Gebrauch von Gedankenstrichen (M-Dashes):** KI-Modelle verwenden den Gedankenstrich (—) häufiger als der Durchschnittsmensch.
+* **Parallele Satzstrukturen:** Ein häufiges KI-Merkmal ist die Satzstruktur „Es ist nicht nur X, es ist Y“.
+* **Praktische Dreierlisten:** KI präsentiert Informationen oft in Dreiergruppen, was ein Muster ist, das Menschen ansprechend finden, aber bei formelhafter Verwendung ein verräterisches Zeichen sein kann.
+* **Das „Uncanny Valley“ des Englischen:** Die von der KI verwendete Sprache kann sich leicht „fremd“ anfühlen, mit seltsamen Wortwahlen oder Tönen.
+* **Füllwörter und Jargon:** KI-Texte enthalten oft vage, positiv klingende Unternehmensbegriffe wie „innovieren“, „erhöhen“ und „vertiefen“, was zu Texten führt, die viel sagen, ohne eine wirkliche Bedeutung zu vermitteln.
+* **Übertriebenes und leeres Lob:** KI-generierte Komplimente wirken oft unaufrichtig und übermäßig überschwänglich.
+* **Seltsame Analogien:** KI kann Vergleiche und Analogien produzieren, die klobig sind und nicht ganz passen.
+* **Ständige Wiederholungen und unnötiger Kontext:** KI wiederholt sich häufig und liefert Füll-Vorspiele, bevor sie auf den Punkt kommt.
