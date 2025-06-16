@@ -67,29 +67,29 @@
 ### 6. **Competitive Analysis & Marktanalyse**
 #### 6.1 Bestehende Lösungen im Vergleich
 - Analyse von 6 DJ-Software-Produkten (Rekordbox, Serato, Traktor, VirtualDJ, djay Pro AI, DJOID)
-- Feature-Matrix mit 22 relevanten Funktionen
+- Feature-Matrix
 - Identifikation von Marktlücken und Differenzierungsmöglichkeiten
 
 #### 6.2 Gap-Analyse
 - Fehlende Features in aktuellen Lösungen
-- Besonders identifizierte Lücken: Cross-Platform-Digging, Setanalyse, Adaptive Tagging
+- Besonders identifizierte Lücken: Cross-Platform-Digging, Setanalyse, Adaptives Tagging
 
 ### 7. **Designkonzept & Lösungsansatz**
 #### 7.1 Kernfunktionalitäten
 - AI-gestützte automatische Musikanalyse
-- Intelligente Tagging-Vorschläge
-- Cross-Platform-Integration für Musik-Discovery
-- Adaptive UI für Vorbereitung vs. Live-Performance
+- Intelligente Tagging-Vorschläge und Recommendations
+- Visualisierung von Ähnlichkeiten
 
 #### 7.2 Informationsarchitektur
 - Strukturierung der Musikbibliothek
-- Tag-Hierarchien und flexible Kategorisierung
+- Tags und flexible Kategorisierung
 - Suchfunktionen und Filter-Mechanismen
+- Vektordatenbank und Embeddings für effiziente Suche
 
 #### 7.3 Designprinzipien
 - Effiziente Navigation & Suchfunktion
 - Dynamische Filter- und Sortieroptionen
-- Visuelle Musikdarstellung
+- Visuelle Musikdarstellung (2D Map Similarity Mode / XY Mode)
 - Stressreduzierung in Live-Situationen
 
 ### 8. **Prototyping & Iteration**
@@ -118,12 +118,10 @@
 #### 10.1 Begründung der Designentscheidungen
 - Warum AI-Integration gewählt wurde
 - Adaptive UI-Konzepte zur Lösung unterschiedlicher Nutzungsszenarien
-- Cross-Platform-Ansatz zur Workflow-Vereinfachung
 
 #### 10.2 Erwartete Auswirkungen
 - Zeitersparnis bei der Musikorganisation
 - Reduzierung von Stress in Live-Situationen
-- Verbesserung der Musikentdeckung
 
 ### 11. **Lessons Learned & Herausforderungen**
 #### 11.1 Methodische Erkenntnisse
