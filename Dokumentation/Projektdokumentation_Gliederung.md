@@ -1,169 +1,155 @@
 # Projektdokumentation: AI-gestütztes Tool zur Katalogisierung und Verwaltung von Musikbibliotheken für DJs
 
-## Gliederung der Dokumentation
+## Überarbeitete Gliederung der Dokumentation
 
 ### 1. **Einführung**
-- Zusammenfassung der Problemstellung und Lösungsansatz
-- Kernziele des Projekts
+- Projektkontext und Zielsetzung
+- Human Centered Design Ansatz
+- Die Rolle der Musik in der DJ-Kultur
 - Methodisches Vorgehen im Überblick
-- Haupterkenntnisse und Empfehlungen
 
-### 2. **Problemdefinition & Nutzerbedürfnisse**
-#### 2.1 Identifikation des Kernproblems
-- Herausforderungen bei der Musikbibliotheksverwaltung
+### 2. **Problemstellung & Nutzerbedürfnisse**
+#### 2.1 Kernprobleme der DJ-Musikverwaltung
 - Die vier Hauptprobleme: Hoher Zeitaufwand, limitierter Tagging-Prozess, Inkonsistenz bei der Verwaltung, unzureichende Analyse
+- DJ-Workflow-Analyse: 5-Phasen-Modell von Discovery bis Performance
+- Fragmentierung zwischen verschiedenen Plattformen und Tools
 
-#### 2.2 Schmerzpunkte der Nutzer
-- Fragmentierter Workflow über verschiedene Plattformen
+#### 2.2 Schmerzpunkte und Pain Points
+- Medienwechsel als kritischer Workflow-Unterbrecher
 - Manueller Tagging-Aufwand als Zeitfresser
 - UI/UX-Probleme aktueller Software-Lösungen
 - Stress bei der Live-Performance durch ineffiziente Tracksuche
 
 #### 2.3 Zielgruppendefinition
-- Professionelle DJs vs. Hobby-DJs
-- Unterschiedliche Genres und Performance-Kontexte
+- Professionelle vs. Semi-professionelle vs. Hobby-DJs
+- Genre-spezifische Anforderungen (Electronic, Event, Multi-Genre)
+- Performance-Kontext-Unterschiede
 
-### 3. **Forschungsmethodik & Vorgehen**
-#### 3.1 Mixed-Methods-Ansatz
-- Qualitative Interviews mit DJs
-- Competitive Analysis bestehender Lösungen
-- Workflow-Analyse und Mapping
+### 3. **User Research & Personas**
+#### 3.1 Forschungsmethodik
+- Mixed-Methods-Ansatz: Qualitative Interviews + Competitive Analysis
+- Interview-Design & Durchführung mit 6 DJs
+- Datenerhebung & systematische Auswertung
 
-#### 3.2 Interview-Design & Durchführung
-- Entwicklung des strukturierten Interview-Leitfadens
-- Rekrutierung von 6 DJ-Interviewpartnern
-- Themenfelder: Digging-Prozess, Vorbereitung, Live-Performance
-
-#### 3.3 Datenerhebung & -auswertung
-- Qualitative Inhaltsanalyse der Interviews
-- Identifikation wiederkehrender Muster und Pain Points
-- Synthese der Erkenntnisse zu Design-Anforderungen
-
-### 4. **User Research Erkenntnisse**
-#### 4.1 DJ-Workflow-Analyse
-- Hochabstrahierter DJ-Workflow: Von der Technik bis zur Performance
-- Fragmentierung zwischen Discovery, Organisation und Live-Performance
-- Medienwechsel als kritischer Pain Point
-
-#### 4.2 Allgemeine Forschungserkenntnisse
+#### 3.2 Interview-Erkenntnisse
 - Workflow-Fragmente und Plattform-Vielfalt
-- Manuelle Organisation und Tagging-Systeme
-- UI/UX-Herausforderungen in bestehender Software
-- Live-Performance und Stressreduktion
-- Integration analoger und digitaler Workflows
+- Manuelle Organisation und individuelle Tagging-Systeme
+- Live-Performance Stressreduktion als kritischer Faktor
 
-### 5. **User Personas & Nutzerszenarien**
-#### 5.1 Primäre Personas
+#### 3.3 Personas & User Journeys
 - **Jasmin (29)**: Strukturierte DJ und Produzentin
-- **Lio (26)**: Vielseitiger DJ mit Fokus auf Kreativität
-- **Samuel (38)**: Nebenberuflicher Event-DJ
+- **Lio (26)**: Kreativer Entdecker mit pragmatischem Ansatz
+- **Samuel (38)**: Event-Spezialist mit Effizienz-Fokus
+- User Journey Mapping: Von Discovery bis Live-Performance
 
-#### 5.2 User Journey Mapping
-- Digging-Prozess: Musik entdecken und bewerten
-- Organisationsprozess: Bibliotheksverwaltung und Tagging
-- Set-Vorbereitung: Playlist-Erstellung und Planung
-- Live-Performance: Echtzeitentscheidungen und Trackauswahl
+#### 3.4 Synthese zu Design-Anforderungen
+- Von Schmerzpunkten zu Funktionsanforderungen
+- Persona-spezifische vs. übergreifende Bedürfnisse
 
-### 6. **Competitive Analysis & Marktanalyse**
-#### 6.1 Bestehende Lösungen im Vergleich
-- Umfassende Analyse von 20+ Musikverwaltungs- und DJ-Software-Produkten
-- **DJ-Software:** Rekordbox, Serato DJ Pro, Traktor Pro, VirtualDJ, Cross DJ, Mixxx, Beatport DJ, DJOID
-- **Musikverwaltung:** Lexicon, Mixx, MediaMonkey, Helium Music Manager, MP3Tag, MusicBee, iTunes/Musik
-- **Speziallösungen:** Taganana, Staccato, DJCU, DJ Studio, Music Organizer
-- Feature-Matrix mit Fokus auf Automatisierung/KI-Features
-- Bewertungsanalyse und Nutzerakzeptanz
-- Identifikation von Marktlücken und Differenzierungsmöglichkeiten
+### 4. **Competitive Analysis & Marktpositionierung**
+#### 4.1 Marktlandschaft-Analyse
+- Performance-orientierte DJ-Software (Rekordbox, Serato, Traktor, VirtualDJ)
+- Reine Musikverwaltungssoftware (MediaMonkey, MP3Tag, Lexicon)
+- Feature-Matrix und KI-Integration-Status
 
-#### 6.2 Gap-Analyse
-- Fehlende Features in aktuellen Lösungen
-- **Hauptlücken:** Cross-Platform-Digging, Setanalyse, Adaptives Tagging
-- **KI-Integration:** Begrenzte intelligente Empfehlungssysteme
-- **Workflow-Fragmentierung:** Keine ganzheitlichen Lösungen für Discovery-to-Performance
-- **Visualisierung:** Fehlende räumliche Darstellung von Musikähnlichkeiten
+#### 4.2 Gap-Analyse & Marktlücken
+- Zentrale Marktlücke: Tool-Fragmentierung
+- Fehlende Features: Räumliche Visualisierung, Adaptives Lernen, Cross-Platform Discovery
+- Rekordbox Monopolposition als Marktbarriere
 
-### 7. **Designkonzept & Lösungsansatz**
-#### 7.1 Kernfunktionalitäten
-- AI-gestützte automatische Musikanalyse
-- Intelligente Tagging-Vorschläge und Recommendations
-- Visualisierung von Ähnlichkeiten
+#### 4.3 Strategische Positionierung
+- Fokussierung auf Vorbereitung statt Live-Performance
+- Abgrenzung zu DJOID und anderen direkten Competitors
+- Koexistenz mit etabliertem Ökosystem
 
-#### 7.2 Informationsarchitektur
-- Strukturierung der Musikbibliothek
-- Tags und flexible Kategorisierung
-- Suchfunktionen und Filter-Mechanismen
-- Vektordatenbank und Embeddings für effiziente Suche
+### 5. **Lösungskonzept & Implementierung**
+#### 5.1 Designkonzept & Kernfunktionalitäten
+- AI-gestützte automatische Musikanalyse (Discogs-EffNet, Essentia)
+- Adaptive Tagging und personalisierte Empfehlungen (MY TAGS System)
+- Hybride Visualisierung: 2D-Map (Similarity Mode) + XY-Mode
 
-#### 7.3 Designprinzipien
-- Effiziente Navigation & Suchfunktion
-- Dynamische Filter- und Sortieroptionen
-- Visuelle Musikdarstellung (2D Map Similarity Mode / XY Mode)
-- Stressreduzierung in Live-Situationen
+#### 5.2 Informationsarchitektur
+- Strukturierung der Musikbibliothek (Crates, Tags, Smart Crates)
+- Filter- und Suchfunktionen mit Multi-Kategorie-Support
+- Vektordatenbank und Feature-Extraktion-Pipeline
 
-### 8. **Prototyping & Iteration**
-#### 8.1 Technische Implementierung
-- Python-basierte Musikanalyse-Tools
-- Entwicklung von Algorithmen für Track-Ähnlichkeit
-- Prototypische Visualisierungen
+#### 5.3 Designprinzipien
+- Augmentation statt Automation: DJ behält kurative Kontrolle
+- Adaptive UI für verschiedene Nutzungsszenarien
+- Interpretierbare vs. automatische Visualisierung
 
-#### 8.2 Design-Iterationen
-- Von Low-Fidelity zu High-Fidelity Prototypen
-- Berücksichtigung von Nutzerfeedback aus Interviews
+#### 5.4 Technische Implementierung
+- Python-Backend für Audio-Analyse + Electron-React-Frontend
+- Multi-Model-Ansatz: Genre, Mood, Instrument, Spectral Features
+- Class Balancing und robuste Normalisierung für heterogene Daten
 
-### 9. **Usability-Tests & Feedback** 
-*[Noch ausstehend - Platzhalter für zukünftige Tests]*
-#### 9.1 Testkonzept
-- Testszenarien basierend auf User Journeys
-- Erfolgsmessung und KPIs
+### 6. **Prototyping & Validierung**
+#### 6.1 Entwicklungsprozess
+- MVP-Validierung der AI-Klassifizierungspräzision
+- Iterative Design-Entwicklung: Von Liste zu 2D-Visualisierung
+- Performance-Optimierungen für große DJ-Bibliotheken
 
-#### 9.2 Testergebnisse
-- [Wird nach Durchführung ergänzt]
+#### 6.2 Usability-Tests & Feedback
+- Strukturierte Tests mit 2 semi-professionellen DJs
+- Think-Aloud-Protokoll mit 6 definierten Aufgaben
+- Validierte Konzepte vs. identifizierte Usability-Probleme
 
-#### 9.3 Optimierungen
-- [Wird nach Durchführung ergänzt]
+#### 6.3 Erkenntnisse & Optimierungen
+- Bestätigter Hybrid-Ansatz: Keine Vollautomatisierung gewünscht
+- Kritische Interface-Fixes: Rechtsklick-Menüs, Tooltips, Achsenbeschriftung
+- Priorisierte Verbesserungsroadmap
 
-### 10. **Designbegründung & Auswirkungen**
-#### 10.1 Begründung der Designentscheidungen
-- Warum AI-Integration gewählt wurde
-- Adaptive UI-Konzepte zur Lösung unterschiedlicher Nutzungsszenarien
+### 7. **Design & Interface-Gestaltung**
+#### 7.1 Designsprache & visuelle Hierarchie
+- Dark Theme für professionelle DJ-Umgebung
+- Farbsystem für intuitive Kategorisierung und Stimmungswahrnehmung
 
-#### 10.2 Erwartete Auswirkungen
-- Zeitersparnis bei der Musikorganisation
-- Reduzierung von Stress in Live-Situationen
+#### 7.2 Layout-Prinzipien für DJ-Workflows
+- Minimale Mausbewegungen durch strategische Drag & Drop-Bereiche
+- Optimierte Informationsdichte gegen kognitive Überlastung
 
-### 11. **Lessons Learned & Herausforderungen**
-#### 11.1 Methodische Erkenntnisse
-- Wert von strukturierten Interviews in der UX-Forschung
-- Herausforderungen bei der Nutzerrekrutierung in Nischenbereichen
+#### 7.3 Cover-zentrierte visuelle Navigation
+- Album-Artwork als primäres Orientierungselement
+- Visuelle Konsistenz zwischen Listen- und Map-Ansicht
 
-#### 11.2 Technische Herausforderungen
-- Komplexität der Musikanalyse-Algorithmen
-- Balance zwischen Automatisierung und Nutzerkontrolle
+#### 7.4 Map-Visualisierung als mentales Modell
+- Räumliche Anordnung entspricht DJ-Denkmustern
+- Konsistente Genre-Cluster unterstützen Spatial Memory
+- Point-Cloud-Metapher für intuitive Ähnlichkeitsnavigation
 
-### 12. **Zukünftige Empfehlungen & Ausblick**
-#### 12.1 Nächste Entwicklungsschritte
-- Durchführung umfassender Usability-Tests
-- Validierung der AI-Algorithmen mit größeren Datensätzen
-- Entwicklung einer MVP-Version
+#### 7.5 Audio-Integration & Playback-Design
+- WaveSurfer.js für sofortiges visuelles Track-Verständnis
+- Hover-to-Play für effizienten Vorhör-Workflow
+- Minimale Latenz zwischen visueller Auswahl und Audiofeedback
 
-#### 12.2 Langfristige Vision
-- Integration in bestehende DJ-Hardware
-- Entwicklung eines DJ-Ökosystems
-- Community-Features und soziale Funktionen
+### 8. **Evaluation & Ausblick**
+#### 8.1 Validierte Design-Entscheidungen
+- Erfolgreiche AI-Feature-Extraktion und Similarity-Engine
+- Map-Visualisierung als Differenzierungsmerkmal
+- Tag-basierte Organisation entspricht DJ-Denkmustern
 
-#### 12.3 Skalierungsstrategien
-- Partnerschaften mit Hardware-Herstellern
-- Integration in bestehende DJ-Software-Lösungen
+#### 8.2 Lessons Learned
+- Wert strukturierter Interviews in Nischen-UX-Forschung
+- Balance zwischen technischer Innovation und Usability
+- Wichtigkeit der Workflow-Integration über isolierte Features
 
-### 13. **Anhang**
-#### 13.1 Interview-Transkripte
-#### 13.2 Technische Dokumentation
-#### 13.3 Designprototypen und Wireframes
-#### 13.4 Literaturverzeichnis
+#### 8.3 Nächste Entwicklungsschritte
+- Sofort-Maßnahmen: Kritische Usability-Fixes
+- Mittelfristig: "Roter Faden" Feature und Hardware-Integration
+- Langfristig: Community-Features und Ecosystem-Integration
+
+### 9. **Anhang**
+#### 9.1 Interview-Dokumentation
+#### 9.2 Technische Spezifikationen
+#### 9.3 Usability-Test-Protokolle
+#### 9.4 Prototyp-Screenshots und Designiterationen
 
 ---
 
-**Hinweise zur Dokumentation:**
-- Diese Gliederung folgt einem UX/UI Research-Ansatz und strukturiert die vorhandenen Materialien logisch
-- Kapitel 9 (Usability-Tests) ist als Platzhalter für zukünftige Tests vorgesehen
-- Die Gliederung berücksichtigt sowohl strategische als auch praktische Umsetzungsaspekte
-- Alle vorhandenen Forschungsergebnisse und Materialien sind in die entsprechenden Kapitel eingeordnet 
+**Strukturelle Verbesserungen umgesetzt:**
+- Konsolidierung von 12 auf 8 Hauptkapitel
+- Eliminierung der 4 Hauptredundanzen (Problem-Definition, DJ-Workflow, Technische Details, DJOID-Analyse)
+- Integration von User Research und Personas in einem Kapitel
+- Zusammenführung von Design und Implementierung
+- Usability-Tests in den Prototyping-Prozess integriert
+- Klare Trennung zwischen Marktanalyse und Lösungskonzept 
