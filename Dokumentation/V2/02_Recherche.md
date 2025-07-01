@@ -6,22 +6,22 @@
 
 Sechs DJs mit unterschiedlichen Profilen und Erfahrungsstufen bildeten die Grundlage unserer user-zentrierten qualitativen Forschung:
 
-**Pino Peña (32, fortgeschritten)**  
+**Pino Peña (29, fortgeschritten)**  
 14 Jahre Erfahrung, vielseitiger Stil von Techno bis Jazz. Spielt in Clubs und im Radio. Organisiert hauptsächlich über iTunes, wechselt zu Rekordbox für Live-Sets.
 
-**DJ Danik (??, semi-professionell)**  
+**DJ Danik (42, semi-professionell)**  
 5 Jahre aktiv, Electronic Music Focus. Nutzt Traktor und legt Wert auf präzise BPM-Analyse. Organisiert nach Energy-Level und Mix-Kompatibilität.
 
-**Concussion (25, professionell)**  
+**Concussion (23, professionell)**  
 10+ Jahre Vollzeit-DJ, spezialisiert auf Drum & Bass. Verwaltet über 15.000 Tracks in Rekordbox. Entwickelte eigene Tagging-Systeme für Sub-Genres.
 
-**Townes (27, Hobby-Produzent)**  
+**Townes (25, Hobby-Produzent)**  
 DJ und Producer, hauptsächlich House und Techno. Kombiniert eigene Produktionen mit gekauften Tracks. Nutzt Ableton für Produktion, Rekordbox für Sets.
 
 **Polygonia (29, Event-DJ)**  
 Spezialisiert auf Hochzeiten und Corporate Events. Verwaltet breites Repertoire von 80er-Hits bis aktueller Chartmusik. Organisiert nach Anlässen und Zielgruppen.
 
-**Toobris (21, Vinyl & Digital)**  
+**Toobris (24, Vinyl & Digital)**  
 Hybrid-DJ mit physischer und digitaler Sammlung. 8 Jahre Erfahrung, hauptsächlich House und Disco. Kombiniert Rekordbox mit handschriftlichen Vinyl-Notizen.
 
 *[Abbildung 2.1: Interview-Teilnehmer Übersicht - Alter, Erfahrung, Genres]*

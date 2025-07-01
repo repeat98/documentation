@@ -12,7 +12,7 @@ Die Digitalisierung hat das DJing grundlegend verändert. Früher war eine Platt
 
 Bestehende DJ-Software konzentriert sich auf Live-Performance. Rekordbox, Serato und Traktor bieten ausgefeilte Mixing-Features, vernachlässigen aber die Organisation. DJs improvisieren mit Excel-Tabellen, starren Ordnerstrukturen oder teils handgeschriebenen Notizen. Ein spezialisiertes Tool für die Vorbereitungsphase fehlt.
 
-## User Centered
+## User Centered Design
 
 Wir wollten echte Nutzerbedürfnisse verstehen, statt von technischen Möglichkeiten auszugehen. Deshalb entschieden wir uns, sehr offen in das Thema zu starten und uns Schritt für Schritt einer detaillierten Problemstellung zu nähern.
 
@@ -58,11 +58,11 @@ Diese Entscheidungen fallen in Sekunden. Schlecht organisierte Musikbibliotheken
 
 ## Relevanz des Themas
 
-Unsere Interviews zeigten: DJs verbringen den Großteil ihrer musikbezogenen Zeit mit Organisation. Bei Vollzeit-DJs sind das 15-20 Stunden pro Woche. Zeit, die für Kreativität fehlt.
+Unsere Interviews zeigten: DJs verbringen den Großteil ihrer musikbezogenen Zeit mit Organisation. Bei Vollzeit-DJs sind das 5-10 Stunden pro Woche. Zeit, die für Kreativität fehlt.
 
-Das Problem wächst mit der Sammlungsgröße. Hobby-DJs kämpfen mit 5.000 Tracks. Profis verwalten 50.000+. Ohne systematische Unterstützung kollabieren selbst ausgeklügelte Ordnungssysteme.
+Das Problem wächst mit der Sammlungsgröße. Hobby-DJs kämpfen mit 5.000 Tracks. Profis verwalten 30.000+. Ohne systematische Unterstützung kollabieren selbst ausgeklügelte Ordnungssysteme.
 
-Die Fragmentierung verschärft das Problem. DJs nutzen 8-12 verschiedene Tools parallel: Musikplattformen zum Entdecken, Download-Manager, Tagging-Software, DJ-Programme. Jeder Plattformwechsel kostet Zeit und birgt Fehlerquellen.
+Die Fragmentierung verschärft das Problem. DJs nutzen viele verschiedene Tools parallel: Musikplattformen zum Entdecken, Download-Manager, Tagging-Software, DJ-Programme. Jeder Plattformwechsel kostet Zeit und birgt Fehlerquellen.
 
 ## Methoden
 
