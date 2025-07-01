@@ -26,7 +26,7 @@ Statt maximaler Funktionalität benötigen DJs nahtlose Integration zwischen den
 Unsere Interviews offenbarten, dass DJs durchschnittlich 8-12 verschiedene Tools parallel nutzen. Diese Fragmentierung ist historisch gewachsen und strukturell schwer auflösbar.
 
 **Organisationszeit übersteigt Performance-Zeit deutlich**  
-80-90% der musikbezogenen Zeit fließt in organisatorische Aufgaben. Dieses Verhältnis wurde unterschätzt und zeigt enormes Optimierungspotential.
+Der Großteil der musikbezogenen Zeit fließt in organisatorische Aufgaben. Dieses Verhältnis wurde unterschätzt und zeigt enormes Optimierungspotential.
 
 **Live-Performance-Stress entsteht durch unzureichende Vorbereitung**  
 Die kritischen Momente beim Live-DJing sind direkte Folge organisatorischer Schwächen. Bessere Tools zur Vorbereitung reduzieren Performance-Stress erheblich.
@@ -119,8 +119,6 @@ MY TAGS System lernte individuelle Nutzersprache innerhalb weniger Beispiele. Ko
 *[Abbildung 8.10: Design-Prozess Learnings - Kritische Erfolgsfaktoren und Fallstricke]*
 
 #### AI-Integration & Akzeptanz
-
-**Explainability wichtiger als Accuracy:** DJs akzeptieren 80% accurate AI-Empfehlungen mit Erklärung eher als 95% accurate Black-Box-Systeme. Transparenz schafft Vertrauen.
 
 **Graduelle Automation bevorzugt:** Sofortige Vollautomatisierung schreckt ab. Schrittweise Einführung von AI-Features ermöglicht Gewöhnung und Vertrauen.
 

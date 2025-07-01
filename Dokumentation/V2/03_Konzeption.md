@@ -222,7 +222,7 @@ Keine 2D-Visualisierung im MVP. Rudimentäre UI ohne Design-Polish. Keine erweit
 ### Bewertung der Modelle
 
 **Discogs-EffNet Performance**  
-Genre-Klassifikation erreichte 75-80% Übereinstimmung mit DJ-Bewertungen. Elektronische Musik wurde präziser klassifiziert als andere Genres. Subgenre-Unterscheidungen funktionierten teilweise, aber nicht konsistent.
+Genre-Klassifikation erreichte eine gute Übereinstimmung mit DJ-Bewertungen. Elektronische Musik wurde präziser klassifiziert als andere Genres. Subgenre-Unterscheidungen funktionierten teilweise, aber nicht konsistent.
 
 **Mood-Detection Ergebnisse**  
 Grundlegende Emotionen (happy/sad, energetic/calm) wurden zuverlässig erkannt. Komplexere Stimmungen wie "melancholic" oder "euphoric" waren weniger präzise. Kontextuelle Faktoren beeinflussten Wahrnehmung stark.
