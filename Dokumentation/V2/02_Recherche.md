@@ -92,7 +92,7 @@ Schlechte Organisation führt zu problematischen Situationen während Auftritten
 
 Rekordbox und Serato bieten grundlegende Tagging-Funktionen. DJs nutzen Tags für Genre-Kategorisierung, Energy-Level-Bewertung oder Instrument-Kennzeichnung. 
 
-Problem: Tags werden inkonsistent vergeben und nach Monaten vergessen. Ohne systematischen Ansatz entstehen widersprüchliche Kategorien ("House" vs. "Deep House" vs. "House Music"). Jeder DJ entwickelt eigene Terminologie, die von Standard-Software schlecht unterstützt wird.
+Problem: Die meisten Anbieter haben vorgegebene, starre Tag-Kategorien. Ausßerdem werden Tags inkonsistent vergeben und nach Monaten vergessen. Ohne systematischen Ansatz entstehen widersprüchliche Kategorien ("House" vs. "Deep House" vs. "House Music"). Jeder DJ entwickelt eigene Terminologie, die von Standard-Software schlecht unterstützt wird.
 
 ### Ordnerstrukturen
 
@@ -225,41 +225,7 @@ Personas halfen bei der Bewertung von Designentscheidungen. Abstrakte Features w
 
 ### Musik entdecken & selektieren
 
-**Touchpoints**: Instagram, SoundCloud, Promo-Mails  ### Machine Learning Ansätze
-
-**Traditionelle Machine Learning**  
-Frühe Ansätze nutzten Support Vector Machines (SVM) und Random Forests auf handgefertigten Features. Diese Methoden erreichten begrenzte Genauigkeit und erforderten Domain-Expertenwissen für Feature-Engineering.
-
-**Deep Learning Revolution**  
-Convolutional Neural Networks (CNNs) lernen hierarchische Repräsentationen direkt aus Spektrogrammen. Recurrent Neural Networks (RNNs) erfassen zeitliche Abhängigkeiten in Musiksequenzen. Transformer-Architekturen ermöglichen Attention-Mechanismen für musikalische Strukturen.
-
-**Transfer Learning**  
-Vortrainierte Modelle auf großen Musikdatensets wie Million Song Dataset oder Discogs ermöglichen bessere Performance auch bei kleineren spezialisierten Datensätzen.
-
-### Vor- und Nachteile verschiedener Ansätze
-
-**Überwachtes Lernen (Supervised Learning)**  
-*Vorteile:* Hohe Genauigkeit bei verfügbaren Labels, interpretierbare Ergebnisse, bewährte Trainingsverfahren  
-*Nachteile:* Abhängigkeit von qualitativ hochwertigen Labels, begrenzte Generalisierung auf neue Genres, hoher Annotationsaufwand
-
-**Unüberwachtes Lernen (Unsupervised Learning)**  
-*Vorteile:* Entdeckung latenter Strukturen ohne Labels, Skalierbarkeit auf große Datensätze, weniger Bias durch menschliche Annotation  
-*Nachteile:* Schwer interpretierbare Cluster, keine Garantie für musikalisch sinnvolle Gruppierungen, Validierung schwierig
-
-**Multi-Task Learning**  
-*Vorteile:* Gleichzeitige Vorhersage mehrerer Eigenschaften (Genre, Mood, Energie), geteilte Repräsentationen verbessern Generalisierung  
-*Nachteile:* Komplexere Architektur, schwierigere Optimierung, potentielle Konflikte zwischen Tasks
-
-**Embedding-basierte Ansätze**  
-*Vorteile:* Kompakte Repräsentation komplexer musikalischer Eigenschaften, effiziente Ähnlichkeitsberechnungen, flexibel für verschiedene Downstream-Tasks  
-*Nachteile:* Weniger interpretierbar als direkte Klassifikation, erfordert zusätzliche Schritte für explizite Labels
-
-*[Abbildung 3.3: KI-Musikklassifizierung - Methodenüberblick und Entwicklung]*
-
-## Erweiterte Trackanalyse mit KI-Feature extraktion 
-**Aktivitäten**: Täglich 30-45 Minuten Discovery-Zeit. Folgt Labels und Künstlern. Sammelt Links in Notes-App.  
-**Probleme**: Promo-Mail-Flut überfordert. Interessante Tracks gehen zwischen Plattformen verloren.  
-**Emotionen**: Neugier auf neue Sounds, Frustration über Fragmentierung.
+**Touchpoints**: Instagram, SoundCloud, Promo-Mails
 
 ### Tracks importieren & analysieren
 
