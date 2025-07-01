@@ -133,8 +133,6 @@ Organisationsprobleme manifestieren sich kritisch während Auftritten unter Zeit
 **How might we** AI-Unterstützung anbieten, ohne kurative Kontrolle zu entziehen?  
 DJs fürchten Bevormundung. AI soll vorschlagen, nicht entscheiden.
 
-**How might we** räumliche Musikerinnerung digital abbilden?  
-DJs denken spatial über Sammlungen. Digitale Tools nutzen diese mentalen Modelle nicht.
 
 ### Visualisierung der HMW durch Cards
 

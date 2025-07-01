@@ -166,15 +166,15 @@ Das System muss flexible Genre-Zuordnungen ermöglichen statt starrer Kategorien
 
 *[Abbildung 3.5: Mentale Modelle - Räumliche vs. Hierarchische Organisation]*
 
-### Räumliche Genre-Landschaften
+### Räumliche Visualisierung als Designlösung
 
-Die Recherche-Erkenntnis "DJs denken räumlich über ihre Sammlungen" führte zu einem zentralen How Might We: "Wie können wir räumliche Musikerinnerung digital abbilden?"
+Das zentrale How Might We "Wie können wir DJs helfen, große Musiksammlungen visuell zu erkunden?" führte uns zu einer räumlichen Visualisierungsstrategie. Listen-Ansichten versagen bei 10.000+ Tracks, daher entwickelten wir eine 2D-Map als alternative Explorationsmethode.
 
-DJs entwickeln räumliche Vorstellungen ihrer Musiksammlung. "Techno ist oben links, Deep House unten rechts" spiegelt mentale Organisationsmodelle wider. Diese Erkenntnis nutzten wir strategisch für das Interface-Design.
+Unser Interface-Design nutzt räumliche Konsistenz strategisch: "Techno ist immer oben links, Deep House immer unten rechts" schafft vorhersagbare Navigation. Diese Designentscheidung ermöglicht es DJs, räumliche Orientierung zu entwickeln - ein Konzept, das von physischen Plattensammlungen bekannt ist.
 
-Spatial Memory funktioniert ähnlich wie bei physischen Plattensammlungen. DJs merken sich Positionen von Tracks relativ zueinander. Eine konsistente räumliche Anordnung ermöglicht schnelle Navigation ohne textuelle Suche.
+Spatial Memory kann durch konsistente Interface-Positionierung entstehen. DJs können sich Positionen von Track-Clustern relativ zueinander merken. Eine stabile räumliche Anordnung ermöglicht schnelle Navigation ohne textuelle Suche.
 
-Cluster-Bildung geschieht organisch durch AI-Features. Genre-Territorien entstehen automatisch, aber vorhersagbar. DJs können schnell zu "ihrem" Bereich navigieren und von dort aus explorieren.
+Cluster-Bildung geschieht organisch durch AI-Features. Genre-Territorien entstehen automatisch durch die Feature-Analyse, aber vorhersagbar durch konsistente Algorithmen. DJs können schnell zu relevanten Bereichen navigieren und von dort aus die AI-angereicherten Metadaten explorieren.
 
 *[Abbildung 3.6: How Might We - Problem zu Lösungsweg Mapping]*
 

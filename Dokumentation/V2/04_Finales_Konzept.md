@@ -125,15 +125,15 @@ Subtags erben Eigenschaften von Parent-Tags. "Deep House" erbt von "House". Vere
 
 ## Aufbau mentaler Modelle
 
-### Räumliche Musikorganisation
+### Räumliche Visualisierung als Lösungsansatz
 
-DJs denken räumlich über ihre Sammlungen. Das Interface macht diese mentalen Modelle sichtbar:
+Die 2D-Visualisierung entstand als direkte Antwort auf zentrale How Might We's aus unserer Research: **"Wie können wir DJs helfen, große Musiksammlungen visuell zu erkunden?"** - Listen-Ansichten versagen bei 10.000+ Tracks und räumliche Visualisierung könnte Überblick schaffen. Die Visualisierung war unsere Designlösung, um explorative Navigation zu ermöglichen und die neu angereicherten AI-Metadaten optimal nutzbar zu machen, anstatt sie in starren Listen zu verstecken.
 
-**Konsistente Genre-Territorien**  
-Techno-Tracks erscheinen immer im gleichen Kartenbereich. Deep House hat ein festes Gebiet. Spatial Memory funktioniert wie bei physischen Plattensammlungen.
+**Konsistente Genre-Territorien als Interface-Design**  
+Unser System positioniert Techno-Tracks immer im gleichen Kartenbereich, Deep House erhält ein festes Gebiet. Diese räumliche Konsistenz ist eine bewusste Interface-Entscheidung, um DJs zu ermöglichen, räumliche Orientierung zu entwickeln - ein Konzept, das von physischen Plattensammlungen bekannt ist.
 
-**Übergangszonen**  
-Zwischen Genre-Clustern entstehen Hybrid-Bereiche. Melodic Techno zwischen Techno und Progressive House. Diese Zonen sind wertvoll für Set-Transitions.
+**Übergangszonen für AI-Feature-Exploration**  
+Zwischen Genre-Clustern entstehen automatisch Hybrid-Bereiche durch die AI-Analyse. Melodic Techno positioniert sich zwischen Techno und Progressive House. Diese Zonen machen die komplexen AI-Features explorierbar und ermöglichen das Entdecken unerwarteter musikalischer Verbindungen, die in traditionellen Listen-Ansichten verborgen blieben.
 
 
 *[Abbildung 4.5: Aufbau mentaler Modelle - Räumliche Musikorganisation]*
@@ -179,11 +179,19 @@ System schlägt ähnliche Tracks zur Selektion vor. "Tracks wie die ausgewählte
 
 ### Library
 
-**Gesamtsammlung**  
-Alle importierten Tracks in einer zentralen Datenbank. Volltext-Suche über Künstler, Titel, Genre. Basis für alle anderen Organisationsebenen.
+**Gesamtsammlung mit vier Ansichten**  
+Alle importierten Tracks in einer zentralen Datenbank, organisiert in vier Hauptkategorien: **Tracks**, **Albums**, **Artists** und **Labels**. Jede Ansicht bietet spezifische Navigation und Filteroptionen für unterschiedliche Organisationsbedürfnisse.
+
+**Tracks-Ansicht**: Vollständige Track-Liste mit allen Metadaten, sortierbar nach BPM, Key, Genre, Import-Datum. Basis für detaillierte Track-Verwaltung und -Analyse.
+
+**Albums-Ansicht**: Gruppierung nach Releases und EPs, nützlich für kohärente Album-Präsentation und Set-Planung mit thematischen Zusammenhängen.
+
+**Artists-Ansicht**: Organisation nach Produzenten und Remixern, ideal für Artist-fokussierte Set-Vorbereitung und Entdeckung neuer Tracks bekannter Künstler.
+
+**Labels-Ansicht**: Gruppierung nach Plattenlabels mit MusicBrainz-Integration, ermöglicht stilorientierte Navigation und Label-Discovery.
 
 **Import-Pipeline**  
-Drag & Drop für einzelne Files oder komplette Ordner. Automatische Duplikatserkennung. Background-Analyse neuer Tracks. Batch-Import für große Sammlungen.
+Drag & Drop für einzelne Files oder komplette Ordner. Automatische Duplikatserkennung. Background-Analyse neuer Tracks. Batch-Import für große Sammlungen. Metadaten werden automatisch allen vier Ansichten zugeordnet.
 
 ### Labels
 
