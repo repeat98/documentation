@@ -10,7 +10,20 @@ Die Arbeit eines DJs findet größtenteils abseits der Bühne statt. Während da
 
 Die Digitalisierung hat das DJing grundlegend verändert. Früher war eine Plattensammlung physisch begrenzt. Heute haben DJs Zugriff auf praktisch unbegrenzte Musikmengen. Was zunächst nach Freiheit klingt, wurde zum Problem: Je größer die Sammlung, desto schwieriger die Verwaltung.
 
-Bestehende DJ-Software konzentriert sich auf Live-Performance. Rekordbox, Serato und Traktor bieten ausgefeilte Mixing-Features, vernachlässigen aber die Organisation. DJs improvisieren mit Excel-Tabellen, Ordnerstrukturen oder handgeschriebenen Notizen. Ein spezialisiertes Tool für die Vorbereitungsphase fehlt.
+Bestehende DJ-Software konzentriert sich auf Live-Performance. Rekordbox, Serato und Traktor bieten ausgefeilte Mixing-Features, vernachlässigen aber die Organisation. DJs improvisieren mit Excel-Tabellen, starren Ordnerstrukturen oder teils handgeschriebenen Notizen. Ein spezialisiertes Tool für die Vorbereitungsphase fehlt.
+
+## User Centered
+
+Wir wollten echte Nutzerbedürfnisse verstehen, statt von technischen Möglichkeiten auszugehen. Deshalb entschieden wir uns, sehr offen in das Thema zu starten und uns Schritt für Schritt einer detaillierten Problemstellung zu nähern.
+
+Als ersten Schritt führten wir Interviews mit sechs DJs unterschiedlicher Erfahrungsstufen und Musikrichtungen. Von der Techno-Produzentin bis zum Hochzeits-DJ wollten wir eine möglichst breite Perspektive auf die täglichen Herausforderungen gewinnen. Darauf aufbauend analysierten wir bestehende Software-Lösungen und identifizierten konkrete Marktlücken.
+
+Für uns persönlich bot der gestalterische Rahmen einen wertvollen Raum, um zu erfahren, zu welchen Erkenntnissen uns der Human Centered Design Process führen kann. Besonders spannend war zu erleben, wie sich unsere Annahmen über die Zielgruppe durch direkten Austausch mit echten Nutzern veränderten.
+
+## Die Rolle der Musik in der DJ-Kultur
+
+DJing bedeutet mehr als technisches Können. Es ist kuratorische Arbeit, musikalische Bildung und emotionale Intelligenz. DJs sind die unsichtbaren Gestalter unserer Musikkultur, die entscheiden, welche Tracks gespielt, welche Künstler gefördert und welche musikalischen Verbindungen geschaffen werden.
+
 
 ## DJ Workflow
 
