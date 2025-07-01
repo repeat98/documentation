@@ -48,27 +48,29 @@ Diese Staffelung ermöglichte iterative Entwicklung mit kontinuierlicher Nutzer-
 
 Objektive Metadaten lassen sich automatisch aus Audiodateien extrahieren und sind technisch messbar:
 
+**Bereits in der Datei vorhandene Metadaten**  
+ID3-Tags enthalten Künstlername, Titel, Album, Jahr und teilweise Genre-Angaben. Diese Grunddaten sind oft unvollständig oder inkonsistent formatiert, besonders bei Promo-Downloads oder selbst erstellten Rips.
+
 **Technische Parameter**  
-BPM (Beats per Minute) bestimmen Mix-Kompatibilität. Tonart ermöglicht harmonische Übergänge. Lautstärke-Normalisierung verhindert Sprünge in der Wiedergabe. Dateiformat und Bitrate beeinflussen Klangqualität.
+BPM (Beats per Minute) bestimmen Mix-Kompatibilität. Tonart ermöglicht harmonische Übergänge. Lautstärke-Normalisierung verhindert Sprünge in der Wiedergabe. Dateiformat und Bitrate beeinflussen Klangqualität. Track-Dauer und Sample-Rate sind weitere messbare Eigenschaften.
 
 **Spektrale Eigenschaften**  
-Frequenzverteilung charakterisiert den Klang. Bassanteil differenziert zwischen verschiedenen Genres. Höhenanteil beeinflusst Wahrnehmung von Helligkeit oder Dunkelheit. Dynamikumfang zeigt Komprimierung an.
+Frequenzverteilung charakterisiert den Klang. Bassanteil differenziert zwischen verschiedenen Genres. Höhenanteil beeinflusst Wahrnehmung von Helligkeit oder Dunkelheit. Dynamikumfang zeigt Komprimierung an. Spektrale Rolloff-Frequenz und Zero-Crossing-Rate bieten weitere Klangcharakteristika.
+
+**Instrumentenerkennung**  
+Dominante Instrumente (Drums, Bass, Synthesizer, Vocals) lassen sich durch AI-Modelle automatisch identifizieren. Unterscheidung zwischen elektronischen und akustischen Instrumenten. Percussion-Pattern und melodische Elemente werden erkannt und klassifiziert.
 
 
 ### Subjektive Metadaten
 
 Subjektive Metadaten basieren auf menschlicher Wahrnehmung und sind schwer automatisierbar:
 
-**Emotionale Eigenschaften**  
-Stimmung (happy, melancholic, aggressive) beeinflusst Publikumsreaktion. Energie-Level bestimmt Position im Set. Groove-Charakter unterscheidet zwischen treibend und entspannt. Atmosphäre reicht von intim bis euphorisch.
+**Genre und Stil-Klassifikation**  
+Musikstile (House, Techno, Ambient) sind kulturelle Konstrukte ohne eindeutige technische Definition. Subgenre-Zuordnungen (Deep House, Progressive Techno) variieren zwischen DJs und Regionen. Diese Kategorisierung ist stark subjektiv und zeitabhängig.
 
-**Kontextuelle Einordnung**  
-Tageszeit-Eignung (Warm-up, Peak-Time, After-Hour) strukturiert Set-Abläufe. Venue-Typ (Club, Festival, Bar) erfordert verschiedene Track-Eigenschaften. Zielgruppen-Passung (Mainstream, Underground, Nische) bestimmt Einsatzbereich.
+**Emotionale Eigenschaften und Stimmung**  
+Stimmung (happy, melancholic, aggressive) beeinflusst Publikumsreaktion. Energie-Level bestimmt Position im Set. Groove-Charakter unterscheidet zwischen treibend und entspannt. Atmosphäre reicht von intim bis euphorisch. Diese Bewertungen sind stark vom Kontext und der momentanen Verfassung des DJs abhängig.
 
-**Musikalische Bewertung**  
-Mix-Kompatibilität geht über technische BPM-Analyse hinaus. Harmonie-Potential berücksichtigt emotionale Übergänge. Crowd-Response basiert auf Live-Erfahrungen. Personal-Rating reflektiert individuelle Präferenzen.
-
-Die Herausforderung liegt in der Automatisierung subjektiver Bewertungen ohne Verlust der individuellen DJ-Perspektive.
 
 *[Abbildung 3.2: Metadaten-Kategorisierung - Objektiv vs. Subjektiv]*
 
@@ -198,50 +200,3 @@ Finale Wireframes kombinieren Listen- und Map-Ansicht. Tab-Navigation ermöglich
 
 *[Abbildung 3.7: Wireframe Evolution - Von Listen zu 2D-Visualisierung]*
 
-## MVP (Erster Prototyp)
-
-### Zielsetzung
-
-Das MVP sollte eine zentrale Frage beantworten: Funktioniert AI-gestützte Musikklassifikation präzise genug für DJ-Anwendungen?
-
-Diese Validierung war entscheidend vor aufwändiger UI-Entwicklung. Falls die AI-Analyse unbrauchbare Ergebnisse liefert, wäre das gesamte Konzept gescheitert.
-
-Das MVP konzentrierte sich auf die Kern-Hypothese: Automatische Audio-Feature-Extraktion kann DJ-relevante Musikeigenschaften zuverlässig identifizieren.
-
-### Aufbau
-
-**Minimale Technische Architektur**  
-Python-Backend für Audio-Analyse mit Essentia-Framework. Einfache Web-UI für Testergebnisse. SQLite-Datenbank für Feature-Speicherung. Keine aufwändigen Visualisierungen oder Animationen.
-
-**Kern-Features implementiert**  
-Automatische Analyse neuer Tracks beim Import. Genre-, Mood- und Instrument-Klassifikation. Basis-Ähnlichkeitssuche zwischen Tracks. Einfache Listen-Darstellung der Ergebnisse.
-
-**Bewusste Limitierungen**  
-Keine 2D-Visualisierung im MVP. Rudimentäre UI ohne Design-Polish. Keine erweiterten Filter-Optionen. Basis-Funktionalität für schnelle Validierung.
-
-### Bewertung der Modelle
-
-**Discogs-EffNet Performance**  
-Genre-Klassifikation erreichte eine gute Übereinstimmung mit DJ-Bewertungen. Elektronische Musik wurde präziser klassifiziert als andere Genres. Subgenre-Unterscheidungen funktionierten teilweise, aber nicht konsistent.
-
-**Mood-Detection Ergebnisse**  
-Grundlegende Emotionen (happy/sad, energetic/calm) wurden zuverlässig erkannt. Komplexere Stimmungen wie "melancholic" oder "euphoric" waren weniger präzise. Kontextuelle Faktoren beeinflussten Wahrnehmung stark.
-
-**Instrument-Recognition Qualität**  
-Dominante Instrumente (Drums, Bass, Synths) wurden korrekt identifiziert. Subtilere Instrumente oder verarbeitete Sounds bereiteten Probleme. Elektronische vs. akustische Instrumente ließen sich gut unterscheiden.
-
-**Ähnlichkeits-Engine Validierung**  
-Embedding-basierte Ähnlichkeitsberechnung funktionierte überraschend gut. DJs erkannten musikalische Verbindungen zwischen vorgeschlagenen Tracks. Nicht alle Vorschläge waren relevant, aber der Großteil machte Sinn.
-
-### Proof of Concept
-
-**Technische Machbarkeit bestätigt**  
-Audio-Analyse funktioniert in akzeptabler Geschwindigkeit. Desktop-Processing ist Cloud-Lösungen überlegen. Batch-Verarbeitung ermöglicht Analyse großer Sammlungen. Ergebnisse sind reproduzierbar und konsistent.
-
-**Nutzerakzeptanz validiert**  
-DJs erkannten AI-generierte Klassifikationen als sinnvoll. Automatische Vorschläge sparten Zeit bei der Organisation. Fehlerhafte Klassifikationen störten nicht, solange korrigierbar.
-
-**Kritische Erkenntnisse**  
-Listen-Darstellung reicht nicht für explorative Navigation. DJs brauchen räumliche Orientierung in großen Sammlungen. Vollautomatisierung wird abgelehnt - finale Kontrolle muss beim DJ bleiben.
-
-Das MVP bewies: Die technische Grundlage funktioniert. Der nächste Schritt war die Entwicklung einer angemessenen Benutzeroberfläche für die gewonnenen Daten.

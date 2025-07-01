@@ -175,7 +175,7 @@ System schlägt ähnliche Tracks zur Selektion vor. "Tracks wie die ausgewählte
 
 *[Abbildung 4.6: Similarity vs. XY Map - Zwei Explorations-Modi]*
 
-## Vier Organisationsebenen
+## Fünf Organisationsebenen
 
 ### Library
 
@@ -184,6 +184,20 @@ Alle importierten Tracks in einer zentralen Datenbank. Volltext-Suche über Kün
 
 **Import-Pipeline**  
 Drag & Drop für einzelne Files oder komplette Ordner. Automatische Duplikatserkennung. Background-Analyse neuer Tracks. Batch-Import für große Sammlungen.
+
+### Labels
+
+**Label-basierte Gruppierung**  
+Automatische Gruppierung von Releases nach Plattenlabel (z.B. Afterlife, Kompakt, Drumcode). Labels repräsentieren oft ähnliche Musikstile und Qualitätsstandards, wodurch sie wertvolle Orientierungspunkte für DJs darstellen.
+
+**Metadata-Extraktion**  
+Label-Informationen werden aus ID3-Tags oder Dateinamen extrahiert. Zusätzlich nutzt das System die MusicBrainz API für erweiterte Label-Metadaten und Beziehungen zwischen Labels. Manuelle Zuordnung und Korrektur bei unvollständigen Metadaten möglich. Label-Profile entwickeln sich aus den enthaltenen Track-Eigenschaften.
+
+**MusicBrainz-Integration für Label-Clustering**  
+Die MusicBrainz API liefert umfangreiche Daten über Label-Hierarchien, Sub-Labels und Verwandtschaften. Das System nutzt diese Informationen für intelligentes Label-Clustering - Major Labels werden mit ihren Sub-Labels verknüpft, verwandte Imprints werden gruppiert und Label-Familien werden automatisch erkannt.
+
+**Label-Discovery**  
+DJs können neue Labels entdecken durch Ähnlichkeitsanalyse zu bereits bekannten und geschätzten Labels. System schlägt verwandte Labels basierend auf musikalischen Eigenschaften und MusicBrainz-Verwandtschaften vor.
 
 ### Crates
 
@@ -212,7 +226,7 @@ Tags überlappen Crate-Grenzen. Ein Track kann mehrere Tags haben. Ermöglicht f
 **Cross-Referenzierung**  
 Tags verbinden Tracks über Crate-Grenzen hinweg. "Favorites" kann Tracks aus verschiedenen Genre-Crates enthalten. Multi-dimensionale Organisation.
 
-*[Abbildung 4.7: Organisationsebenen - Library > Crates > Smart Crates > Tags]*
+*[Abbildung 4.7: Organisationsebenen - Library > Labels > Crates > Smart Crates > Tags]*
 
 ## Informationsarchitektur
 
