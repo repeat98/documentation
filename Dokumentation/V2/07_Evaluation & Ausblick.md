@@ -36,8 +36,6 @@ Trotz verschiedener Musikrichtungen zeigen alle DJs ähnliche Organisationsprobl
 
 ### Marktlücke konkretisiert
 
-Die Competitive Analysis bestätigte eine strukturelle Marktlücke zwischen Performance-orientierten und Verwaltungs-orientierten Tools. Keine bestehende Lösung integriert Deep-Organisation mit DJ-spezifischen Features.
-
 Die strategische Fokussierung auf Vorbereitung statt Live-Performance ermöglicht Koexistenz mit etablierten Playern (Rekordbox, Serato) ohne direkte Konfrontation. DJs können unser Tool für Organisation nutzen und trotzdem ihre gewohnte Performance-Software beibehalten.
 
 ### Human Centered Design Erkenntnisse

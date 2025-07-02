@@ -81,6 +81,9 @@ Der zweite Usability-Test validierte den fortgeschrittenen Prototyp mit vollstä
 • 2D-Map-Visualisierung für räumliche Musikexploration  
 • XY-Modus für parametrische Set-Planung mit interpretierbaren Achsen
 
+**Erweiterte Testgruppe mit Beginner-Perspektive**  
+Zusätzlich zu den semi-professionellen DJs wurde ein Beginner-DJ (3 Monate Erfahrung) getestet, um die Lernkurve und Intuitivität des Systems zu validieren. Diese Diversität ermöglichte Erkenntnisse über verschiedene Erfahrungslevel und Legacy-Software-Gewohnheiten.
+
 *[Abbildung 6.4: Usability-Test-Setup - Testumgebung und Aufgaben-Szenarien]*
 
 ### Teilnehmer-Profile und Testgruppe
@@ -118,4 +121,13 @@ Die Fähigkeit, große Musikmengen visuell zu erfassen und Ähnlichkeits-Cluster
 **Bestätigung des Hybrid-Ansatzes: Augmentation statt Automation**  
 Die Testpersonen lehnten Vollautomatisierung entschieden ab und bestätigten unser Designprinzip der kurativen Kontrolle. Die Sorge vor vollständiger Automatisierung wurde deutlich formuliert - DJs wollen die finale Entscheidungshoheit behalten, um ihre kurative Rolle zu bewahren.
 
-Das AI-Empfehlungssystem wurde als hilfreich empfunden, solange der DJ die finale Entscheidungskontrolle behält. 
+Das AI-Empfehlungssystem wurde als hilfreich empfunden, solange der DJ die finale Entscheidungskontrolle behält.
+
+**Validierung der Drag & Drop-Interaktion**  
+Das zentrale Interaction Pattern des Drag & Drop wurde erfolgreich validiert, besonders bei Nutzern ohne tiefe Legacy-Software-Gewohnheiten. Die intuitive Erkennbarkeit des Tag-Systems und die Erwartung, Tracks direkt zu Tags ziehen zu können, bestätigte die Designentscheidung für diese Interaktionsform.
+
+**Erfahrungslevel-spezifische Erkenntnisse**  
+Beginner-DJs zeigten weniger Widerstand gegen neue Interface-Paradigmen und adaptierten innovative Features schneller. Erfahrene DJs brachten wertvollen Kontext mit, hatten aber stärkere Erwartungen basierend auf bestehender Software. Diese Diversität validierte die Notwendigkeit flexibler Onboarding-Strategien.
+
+**Interface-Hierarchie und visuelle Orientierung**  
+Tests identifizierten kritische Schwächen in der Informationsarchitektur, besonders bei Suchfunktionen und visuellen Hinweisen. Die starke visuelle Orientierung der DJs an Waveforms und Cover-Artwork bestätigte design-strategische Entscheidungen, offenbarte aber auch Verbesserungsbedarf bei der Konsistenz von Interaktionsmustern. 

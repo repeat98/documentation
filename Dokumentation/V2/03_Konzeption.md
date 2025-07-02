@@ -78,24 +78,18 @@ Stimmung (happy, melancholic, aggressive) beeinflusst Publikumsreaktion. Energie
 
 ### Audio Feature Extraction
 
-Moderne KI-Musikklassifizierung basiert auf der automatischen Extraktion von Audio-Features aus digitalen Musikdateien. Diese Features lassen sich in verschiedene Kategorien unterteilen:
+Moderne KI-Musikklassifizierung basiert auf der automatischen Extraktion von Audio-Features aus digitalen Musikdateien. Diese Features werden in einem mehrstufigen Prozess von messbaren Eigenschaften zu semantischen Bedeutungen transformiert:
 
-**Low-Level Features**  
-Spektrale Eigenschaften wie Spektralzentrum, Spektrale Rolloff-Frequenz und Mel-Frequency Cepstral Coefficients (MFCCs) beschreiben die grundlegenden akustischen Eigenschaften eines Audiosignals. Rhythmische Features wie Onset-Detektion und Beat-Tracking erfassen zeitliche Strukturen.
+**Low-Level Features (Grundlegende Klangeigenschaften)**  
+Das *Spektralzentrum* beschreibt, ob ein Track eher "hell" oder "dunkel" klingt - hohe Werte bedeuten viele Höhen (heller Klang), niedrige Werte viele Tiefen (dunkler, bassiger Klang). Die *Spektrale Rolloff-Frequenz* zeigt, ab welcher Frequenz der Sound "abfällt" - wichtig für die Unterscheidung zwischen warmen und scharfen Klangfarben.
 
-**Mid-Level Features**  
-Harmonische Eigenschaften wie Chromas und Tonhöhenklassen-Profile erfassen melodische und harmonische Inhalte. Timbrale Eigenschaften beschreiben Klangfarben und Instrumentierung.
+*Mel-Frequency Cepstral Coefficients (MFCCs)* erfassen die Klangfarbe ähnlich wie das menschliche Ohr - sie unterscheiden beispielsweise zwischen dem warmen Klang einer Trompete und dem metallischen einer E-Gitarre. Rhythmische Features wie Onset-Detektion und Beat-Tracking erfassen zeitliche Strukturen und identifizieren charakteristische Drum-Patterns.
 
-**High-Level Features**  
-Semantische Features wie Genre, Stimmung und Instrumentenerkennung werden durch Deep Learning-Modelle aus Low- und Mid-Level-Features abgeleitet.
+**Mid-Level Features (Musikalische Eigenschaften)**  
+*Chromas* und Tonhöhenklassen-Profile erfassen harmonische Inhalte - ob ein Track in Moll (melancholisch) oder Dur (fröhlich) steht, welche Akkordprogressionen verwendet werden. Timbrale Eigenschaften unterscheiden zwischen organischen (Gitarre, Klavier) und synthetischen (Synthesizer, Drum-Machine) Klängen.
 
-### Machine Learning Ansätze
-
-**Traditionelle Machine Learning**  
-Frühe Ansätze nutzten Support Vector Machines (SVM) und Random Forests auf handgefertigten Features. Diese Methoden erreichten begrenzte Genauigkeit und erforderten Domain-Expertenwissen für Feature-Engineering.
-
-**Deep Learning Revolution**  
-Convolutional Neural Networks (CNNs) lernen hierarchische Repräsentationen direkt aus Spektrogrammen. Recurrent Neural Networks (RNNs) erfassen zeitliche Abhängigkeiten in Musiksequenzen. Transformer-Architekturen ermöglichen Attention-Mechanismen für musikalische Strukturen.
+**High-Level Features (Semantische Bedeutungen)**  
+Durch Deep Learning werden aus den Grundeigenschaften semantische Features wie Genre-Zugehörigkeit, emotionale Stimmung und spezifische Instrumente abgeleitet. Diese entsprechen dem, was DJs intuitiv beim Hören wahrnehmen und sind für den DJ-Workflow besonders relevant: Genre-Klassifikation ermöglicht schnelle Stilzuordnung, Mood-Detection hilft bei der Set-Dramaturgie, und Energy-Level-Analyse unterstützt beim Aufbau von Spannungsbögen. Diese semantischen Features überbrücken die Lücke zwischen technischen Messwerten und musikalischer Praxis.
 
 **Audio-zu-Bild-Transformation**  
 Ein Schlüsselkonzept moderner KI-Musikklassifizierung ist die Umwandlung von Audiosignalen in visuelle Repräsentationen. Dabei werden Tracks in 2D-"Bilder" transformiert:
@@ -108,28 +102,8 @@ Ein Schlüsselkonzept moderner KI-Musikklassifizierung ist die Umwandlung von Au
 
 Diese visuellen Repräsentationen ermöglichen es, bewährte Computer Vision-Techniken auf Musik anzuwenden. CNNs, die ursprünglich für Bilderkennung entwickelt wurden, können Muster in Spektrogrammen genauso identifizieren wie Objekte in Fotos. Filter lernen musikalische "Texturen" wie Drumpatterns, Basslinien oder harmonische Progressionen zu erkennen.
 
-**Transfer Learning**  
-Vortrainierte Modelle auf großen Musikdatensets wie Million Song Dataset oder Discogs ermöglichen bessere Performance auch bei kleineren spezialisierten Datensätzen.
-
-### Vor- und Nachteile verschiedener Ansätze
-
-**Überwachtes Lernen (Supervised Learning)**  
-*Vorteile:* Hohe Genauigkeit bei verfügbaren Labels, interpretierbare Ergebnisse, bewährte Trainingsverfahren  
-*Nachteile:* Abhängigkeit von qualitativ hochwertigen Labels, begrenzte Generalisierung auf neue Genres, hoher Annotationsaufwand
-
-**Unüberwachtes Lernen (Unsupervised Learning)**  
-*Vorteile:* Entdeckung latenter Strukturen ohne Labels, Skalierbarkeit auf große Datensätze, weniger Bias durch menschliche Annotation  
-*Nachteile:* Schwer interpretierbare Cluster, keine Garantie für musikalisch sinnvolle Gruppierungen, Validierung schwierig
-
-**Multi-Task Learning**  
-*Vorteile:* Gleichzeitige Vorhersage mehrerer Eigenschaften (Genre, Mood, Energie), geteilte Repräsentationen verbessern Generalisierung  
-*Nachteile:* Komplexere Architektur, schwierigere Optimierung, potentielle Konflikte zwischen Tasks
-
-**Embedding-basierte Ansätze**  
-*Vorteile:* Kompakte Repräsentation komplexer musikalischer Eigenschaften, effiziente Ähnlichkeitsberechnungen, flexibel für verschiedene Downstream-Tasks  
-*Nachteile:* Weniger interpretierbar als direkte Klassifikation, erfordert zusätzliche Schritte für explizite Labels
-
-*[Abbildung 3.3: KI-Musikklassifizierung - Methodenüberblick und Entwicklung]*
+**Von Features zu Embeddings**  
+Alle extrahierten Features werden in hochdimensionale Vektoren (Embeddings) mit 400+ Dimensionen umgewandelt. Jede Dimension repräsentiert eine spezifische musikalische Eigenschaft. Ähnliche Tracks erhalten ähnliche Embedding-Werte - dadurch kann das System automatisch erkennen, welche Songs gut zusammenpassen.
 
 
 ### Embedding-basierte Ähnlichkeitsberechnung
