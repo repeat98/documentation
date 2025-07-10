@@ -76,9 +76,9 @@ Statt Black-Box-Algorithmen werden AI-Entscheidungen erklärbar gemacht. DJs ver
 **Lernende Anpassung**  
 Das System lernt aus DJ-Entscheidungen ohne diese zu überschreiben. Verworfene Vorschläge verbessern zukünftige Empfehlungen. Individuelle Präferenzen werden berücksichtigt.
 
-### Explainable AI-Features
+### Transparenz
 
-**Feature-Visualisierung**  
+**Feature-Visualisierung**  w
 DJs sehen, welche Audio-Eigenschaften zu Ähnlichkeits-Empfehlungen führen. BPM-Kompatibilität, Genre-Überschneidungen, Mood-Ähnlichkeiten werden transparent dargestellt.
 
 **Konfidenz-Scores**  
@@ -101,25 +101,16 @@ Wenn DJs Tracks zu selbsterstellten Tags hinzufügen, analysiert das System dere
 **Intelligente Vorschläge**  
 Basierend auf gelernten Tag-Profilen schlägt das System automatisch passende Tracks vor. Ähnlichkeit zu bereits kategorisierten Tracks bestimmt Empfehlungen. Smart Folders befüllen sich selbst.
 
-### Additiv vs Subtraktiv
-
-**Additiver Ansatz (Standard)**  
-Neue Tracks werden zu bestehenden Tags hinzugefügt. System schlägt zusätzliche Kategorisierungen vor. Erweitert das Tag-Profil kontinuierlich.
-
-**Subtraktiver Ansatz (Filter)**  
-DJs können explizit Tracks aus Tag-Vorschlägen ausschließen. "Dieser Track ist NICHT Minimal Techno" verfeinert die AI-Klassifikation. Negative Beispiele verbessern Genauigkeit.
-
 ### Tagkategorien
 
 **Hierarchische Organisation**  
 Tags können in Kategorien angelegt werden:
-- Genre-Tags: House, Techno, Ambient
-- Mood-Tags: Energetic, Melancholic, Euphoric  
-- Context-Tags: Warm-up, Peak-time, Afterhour
-- Personal-Tags: Favorites, New Discoveries, Set-ready
+- Style-Tags: Chunky-Bass, Floaty, Stomper, Rolly-Groove
+- Context-Tags: Opening-Set, Prime-Time, Cool-Down, Transition-Perfect  
+- Situation-Tags: Crowd-Tester, Floor-Filler, Hands-Up-Track, Surprise-Drop
+- Mood-Tags: Dreamy-Breakdown, Driving-Hypnosis, Feel-Good-Vibes, Dark-Journey
 
-**Tag-Vererbung**  
-Subtags erben Eigenschaften von Parent-Tags. "Deep House" erbt von "House". Vereinfacht Organisation großer Taxonomien.
+DJs können hier ihrer Kreativität freien Lauf lassen und völlig eigene Organisationssysteme entwickeln. Jeder DJ spricht seine eigene "Musiksprache" - diese individuellen Begriffe und Kategorien spiegeln persönliche Erfahrungen, musikalische Präferenzen und Workflow-Gewohnheiten wider. Das System lernt diese persönlichen Ordnungsstrukturen und schlägt automatisch passende Tracks für die selbst erstellten Kategorien vor.
 
 *[Abbildung 4.4: MY TAGS Adaptive Learning - Personalisierungs-Pipeline]*
 
@@ -149,7 +140,7 @@ Principal Component Analysis reduziert 400-dimensionale Features auf 2D-Darstell
 PCA-Achsen sind mathematische Konstrukte ohne offensichtliche musikalische Bedeutung. DJs verstehen nicht, warum Tracks gruppiert sind. Exploration funktioniert, aber Transparenz fehlt.
 
 **Ungezieltes Entdecken**  
-Similarity Mode eignet sich für Serendipity. DJs entdecken unerwartete Verbindungen zwischen Tracks. Besonders wertvoll bei großen, unorganisierten Sammlungen.
+DJs entdecken unerwartete Verbindungen zwischen Tracks. Besonders wertvoll bei großen, unorganisierten Sammlungen.
 
 ### X/Y Map
 
@@ -173,7 +164,20 @@ Selektierte Tracks können gemeinsam zu Crates hinzugefügt, getaggt oder export
 **Intelligente Vorauswahl**  
 System schlägt ähnliche Tracks zur Selektion vor. "Tracks wie die ausgewählten" erweitert Auswahl automatisch. Erleichtert kohärente Playlist-Erstellung.
 
-*[Abbildung 4.6: Similarity vs. XY Map - Zwei Explorations-Modi]*
+### Vektorraum-Visualisierung
+
+**Hochdimensionale Datenstrukturen**  
+Die 400-dimensionalen Audio-Feature-Vektoren werden in einem komplexen Vektorraum organisiert. Für die Dokumentation wurde eine vereinfachte 3D-Visualisierung dieses Vektorraums erstellt, um die räumlichen Beziehungen zwischen Tracks zu veranschaulichen.
+
+**Clustering-Darstellung**  
+Die 3D-Visualisierung zeigt, wie ähnliche Tracks im hochdimensionalen Raum clustern. Genre-Gruppen bilden deutliche Cluster, während Übergangsbereiche graduelle Stilwechsel repräsentieren.
+
+**Interaktive Demonstration**  
+Ein QR-Code führt zu einer interaktiven 3D-Darstellung des Vektorraums mit echten Track-Daten. Diese Visualisierung dient der Dokumentation und Erklärung der zugrundeliegenden Datenstrukturen.
+
+*[Abbildung 4.6: Similarity vs. XY Map - Zwei Explorations-Modi]*  
+*[Abbildung 4.7: Vektorraum-Visualisierung - 3D-Darstellung des hochdimensionalen Feature-Raums]*  
+*[QR-Code: Interaktive Vektorraum-Demo - 3D-Exploration der Track-Cluster]*
 
 ## Fünf Organisationsebenen
 
@@ -234,7 +238,7 @@ Tags überlappen Crate-Grenzen. Ein Track kann mehrere Tags haben. Ermöglicht f
 **Cross-Referenzierung**  
 Tags verbinden Tracks über Crate-Grenzen hinweg. "Favorites" kann Tracks aus verschiedenen Genre-Crates enthalten. Multi-dimensionale Organisation.
 
-*[Abbildung 4.7: Organisationsebenen - Library > Labels > Crates > Smart Crates > Tags]*
+*[Abbildung 4.8: Organisationsebenen - Library > Labels > Crates > Smart Crates > Tags]*
 
 ## Informationsarchitektur
 
@@ -245,18 +249,20 @@ Die Systemarchitektur balanciert Performance-Anforderungen mit Flexibilität fü
 **SQLite für Metadaten**  
 Lokale Datenbank für Track-Informationen, Tags, Crates. JSON-BLOBs für komplexe Feature-Arrays. Schnelle Queries auch bei 50.000+ Tracks.
 
+**Vektordatenbank für Ähnlichkeitsberechnungen**  
+Spezialisierte Vektordatenbank für hochdimensionale Audio-Features. Jeder Track wird als 400-dimensionaler Vektor gespeichert, der die kombinierten Embeddings aus Genre-, Mood-, Instrument- und spektralen Modellen enthält. 
+
+**Optimierte Similarity Search**  
+Approximate Nearest Neighbor (ANN) Algorithmen für schnelle Ähnlichkeitssuche auch bei großen Sammlungen. Cosine-Similarity für musikalische Verwandtschaft. Indexierung ermöglicht Sub-Sekunden-Queries bei 50.000+ Tracks.
+
+**Vektorraum-Struktur**  
+Die 400-dimensionalen Vektoren organisieren sich in einem komplexen Raum, wo musikalische Ähnlichkeit durch räumliche Nähe repräsentiert wird. Diese Struktur ermöglicht die automatische Erkennung von Musik-Clustern und Stilübergängen ohne manuelle Kategorisierung.
+
 **Feature-Vektoren**  
 Normalisierte Audio-Features als numerische Vektoren. Optimiert für Ähnlichkeitsberechnungen und Clustering. Separate Indizierung für Performance.
 
-### UI-State Management
 
-**React Context für große Datenmengen**  
-Zentrale State-Verwaltung für Track-Libraries. Optimistic Updates für responsive UI. Lazy Loading für große Sammlungen.
-
-**Virtualized Rendering**  
-Nur sichtbare Tracks werden gerendert. Ermöglicht flüssige Navigation in Listen mit 10.000+ Einträgen. Memory-effizient bei großen Datenmengen.
-
-*[Abbildung 4.8: Informationsarchitektur - Datenbankstruktur und UI-State-Management]*
+*[Abbildung 4.9: Informationsarchitektur - Datenbankstruktur und UI-State-Management]*
 
 ## Filtermechanismen
 
@@ -284,14 +290,14 @@ Zeige nur Tracks die Genre = Techno UND Energy > 0.8 UND BPM > 130 haben. Präzi
 **Verschärfende Filter**  
 Jeder zusätzliche Filter verkleinert das Ergebnis. Ermöglicht schrittweise Verfeinerung großer Suchergebnisse.
 
-*[Abbildung 4.9: Filtermechanismen - Dynamische Filter und Logik-Operationen]*
+*[Abbildung 4.10: Filtermechanismen - Dynamische Filter und Logik-Operationen]*
 
 ## Nutzung nach der Organisation
 
 ### Export (Saubere Ordnerstruktur auf USB Stick)
 
-**Rekordbox-XML Export**  
-Native Integration mit Pioneer DJ Ecosystem. Crates werden zu Rekordbox-Playlists. Tags und Metadaten bleiben erhalten. Hot Cues und Beat Grids übertragbar.
+**M3U Playlist Export**  
+Standardisierte M3U-Dateien für breite Kompatibilität mit DJ-Software. Crates werden zu .m3u-Playlists exportiert. Funktioniert mit Rekordbox, Serato, Traktor und den meisten anderen DJ-Programmen. Da Rekordbox closed source und proprietär ist, setzen wir auf offene Standards. DJs müssen im Voraus durchdachte Crates und Playlists erstellen, da erweiterte Metadaten wie Tags nur begrenzt übertragbar sind.
 
 **Ordner-basierter Export**  
 Traditionelle Verzeichnisstruktur für USB-Sticks. Crate-Namen werden zu Ordnern. Datei-Kopien mit konsistenter Benennung. Kompatibel mit CDJ-Hardware.
@@ -302,6 +308,6 @@ Auswahl zwischen verschiedenen Organisationsstrukturen. Genre-basiert, Alphabet-
 **Metadaten-Preservation**  
 ID3-Tags werden mit exportiert. Cue Points und Waveforms übertragbar. Organisationsaufwand geht nicht verloren beim Hardware-Wechsel.
 
-*[Abbildung 4.10: Export-Workflows - Rekordbox XML und USB Folder Structure]*
+*[Abbildung 4.11: Export-Workflows - M3U Playlists und USB Folder Structure]*
 
 Die finale Lösung integriert alle Workflow-Phasen von der AI-Analyse bis zum Hardware-Export. DJs behalten kurative Kontrolle bei gleichzeitiger Automatisierung repetitiver Aufgaben. 

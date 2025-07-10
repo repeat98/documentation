@@ -24,34 +24,14 @@ Orange als Hauptakzentfarbe für interaktive Elemente, aktive Zustände und wich
 - **Inactive Text**: #999999 (Deaktivierte Elemente)
 - **Error Text**: #FF4444 (Fehlermeldungen)
 
-## Color Guide
 
-### Feature-spezifische Farbcodierung
-
-**Genre-Kategorien**
-- **Electronic**: Orange-Töne (#FE6C40 - #FF8C42)
-- **House**: Blau-Töne (#4A9EFF - #6BB6FF)  
-- **Techno**: Rot-Töne (#FF4444 - #FF6666)
-- **Ambient**: Grün-Töne (#44AA44 - #66BB66)
-
-**Mood-Visualisierung**
-- **Energetic**: Warme Farben (Rot, Orange, Gelb)
-- **Calm**: Kühle Farben (Blau, Grün, Violett)
-- **Happy**: Helle, saturierte Töne
-- **Melancholic**: Gedämpfte, dunkle Töne
-
-**UI-Status-Farben**
-- **Success**: #44AA44 (Erfolgreich abgeschlossen)
-- **Warning**: #FFAA44 (Aufmerksamkeit erforderlich)
-- **Error**: #FF4444 (Kritische Fehler)
-- **Info**: #4A9EFF (Informative Hinweise)
 
 ## Typografie
 
-### System-Font für plattformübergreifende Konsistenz
+### Geist als charakteristische Schriftfamilie
 
 **Primäre Schriftfamilie**  
-System-Font-Stack gewährleistet native Darstellung auf allen Betriebssystemen. Windows nutzt Segoe UI, macOS San Francisco, Linux Roboto. Konsistente Lesbarkeit ohne externe Font-Downloads.
+Geist von Vercel als moderne, technische Schriftfamilie für das gesamte Interface. Die geometrische Sans-Serif bietet hohe Lesbarkeit bei verschiedenen Schriftgrößen und verleiht dem Tool einen zeitgemäßen, professionellen Charakter.
 
 **Typographische Hierarchie**  
 Klare Größenabstufungen optimiert für DJ-Workflows:
@@ -100,17 +80,6 @@ Reduzierte, geometrische Formen für schnelle Erkennung. Konsistente Strichstär
 - **Export**: Pfeil nach außen mit USB-Symbol
 - **Settings**: Zahnrad für Konfiguration
 
-### Adaptive Icon-Systeme
-
-**Size Variations**  
-Icons skalieren von 16px (kleine UI-Elemente) bis 32px (Hauptnavigation). SVG-Format für verlustfreie Skalierung auf High-DPI-Displays.
-
-**State Indications**
-- **Default**: Standard-Darstellung in UI-Grau
-- **Hover**: Orange Akzentfarbe mit 20% Opacity
-- **Active**: Vollständige Orange-Färbung
-- **Disabled**: 50% Opacity, keine Interaktion
-
 ## Komponenten
 
 ### Atoms
@@ -145,7 +114,7 @@ Atoms bilden die kleinsten funktionalen Einheiten des Design-Systems. Jedes Atom
 **Kombinierte Funktionseinheiten**  
 Molecules verbinden Atoms zu funktionalen Gruppen mit spezifischem Zweck.
 
-**Track Card**
+**Track**
 - Kombination: Album Cover + Track Info + Metadaten + Tags + Actions
 - **Compact Mode**: 48x48px Cover, einspaltig für Listen
 - **Extended Mode**: 120x120px Cover, mehrspaltig für Grid
@@ -186,7 +155,7 @@ Organisms kombinieren Molecules zu vollständigen Interface-Sektionen.
 - **Lasso Tool**: Freiform-Selektion mit visueller Feedback
 - **Cluster Labels**: Dynamische Genre-Bezeichnungen
 
-**Filter Sidebar**
+**Sidebar**
 - Kombination: Search Bar + Filter Groups + Clear All Button
 - Kollabierbare Sektionen für Genre, Mood, BPM, Energy
 - Live Preview der Ergebnisanzahl bei Filter-Änderungen

@@ -7,22 +7,22 @@
 Sechs DJs mit unterschiedlichen Profilen und Erfahrungsstufen bildeten die Grundlage unserer user-zentrierten qualitativen Forschung:
 
 **Pino Peña (29, fortgeschritten)**  
-14 Jahre Erfahrung, vielseitiger Stil von Techno bis Jazz. Spielt in Clubs und im Radio. Organisiert hauptsächlich über iTunes, wechselt zu Rekordbox für Live-Sets.
+14 Jahre Erfahrung, vielseitiger Stil von Techno und breakiger Bassmusik bis Jazz, Hip-Hop und Reggae. Spielt in Clubs, bei privaten Events und im Radio. Organisiert hauptsächlich über iTunes, exportiert mit Rekordbox für Live-Sets.
 
-**DJ Danik (42, semi-professionell)**  
-5 Jahre aktiv, Electronic Music Focus. Nutzt Traktor und legt Wert auf präzise BPM-Analyse. Organisiert nach Energy-Level und Mix-Kompatibilität.
+**DJ Danik (Event-DJ, semi-professionell)**  
+Hauptberuflich Speditionskaufmann, nebenbei DJ für Hochzeiten und Events. Fokus auf Discofox, Malle-Musik, 90er-Hits und gelegentlich elektronische Musik. Nutzt Virtual DJ und organisiert nach Jahrzehnten.
 
-**Concussion (23, professionell)**  
-10+ Jahre Vollzeit-DJ, spezialisiert auf Drum & Bass. Verwaltet über 15.000 Tracks in Rekordbox. Entwickelte eigene Tagging-Systeme für Sub-Genres.
+**Concussion (23, semi-professionell)**  
+4-5 Jahre DJ-Erfahrung, 9-10 Jahre Produzent. Spezialisiert auf klassischen Techno und Schranz. Nutzt Rekordbox und experimentiert mit verschiedenen Organisationssystemen nach Artists.
 
-**Townes (25, Hobby-Produzent)**  
-DJ und Producer, hauptsächlich House und Techno. Kombiniert eigene Produktionen mit gekauften Tracks. Nutzt Ableton für Produktion, Rekordbox für Sets.
+**Townes (24, Vinyl-DJ)**  
+7 Jahre Erfahrung (5 Jahre Vinyl-Only, 2 Jahre Hybrid). Semi-professionell, legt hauptsächlich in Clubs auf. Fokus auf hypnotic Techno mit Einflüssen aus House, Ambient und Breaks. Arbeitet ausschließlich mit Vinyl über Discogs.
 
-**Polygonia (29, Event-DJ)**  
-Spezialisiert auf Hochzeiten und Corporate Events. Verwaltet breites Repertoire von 80er-Hits bis aktueller Chartmusik. Organisiert nach Anlässen und Zielgruppen.
+**Polygonia (29, professionell)**  
+7 Jahre Erfahrung, lebt von DJ- und Produktionstätigkeit. Spielt in Clubs und auf Festivals. Vielseitiger Stil mit Techno, House, Breakbeat, Bassmusik und psychedelischen Elementen. Nutzt umfangreiches Tagging-System in Rekordbox.
 
-**Toobris (24, Vinyl & Digital)**  
-Hybrid-DJ mit physischer und digitaler Sammlung. 8 Jahre Erfahrung, hauptsächlich House und Disco. Kombiniert Rekordbox mit handschriftlichen Vinyl-Notizen.
+**Toobris (24, Club-DJ)**  
+7 Jahre Erfahrung, spielt hauptsächlich in Clubs. Fokus auf Techno mit starkem Groove. Nutzt Rekordbox mit detailliertem Tag-System für Mood und Genre-Kategorisierung.
 
 *[Abbildung 2.1: Interview-Teilnehmer Übersicht - Alter, Erfahrung, Genres]*
 
@@ -58,87 +58,9 @@ Jedes Interview dauerte 45-90 Minuten und wurde remote über Zoom durchgeführt.
 
 Die DJs wurden ermutigt, ihre Bildschirme zu teilen und ihre aktuellen Organisationssysteme zu zeigen. Diese Show-and-Tell-Methode offenbarte oft mehr als reine Beschreibungen.
 
-## Pain Points
+### Von Interviews zu Personas
 
-### Medienwechsel unterbricht Workflow
-
-Alle DJs nutzen viele verschiedene Tools parallel. Ein typischer Discovery-Prozess verdeutlicht die Problematik: Instagram-Post → SoundCloud-Preview → Bandcamp-Kauf → iTunes-Import → Rekordbox-Organisation → USB-Export. Jeder Plattformwechsel birgt Verlustrisiken für Metadaten und unterbricht den kreativen Flow.
-
-Die Fragmentierung entsteht durch historisch gewachsene Strukturen. Musik wird über verschiedene Anbieter mit unterschiedlichen Bezahlsystemen bereitgestellt. Eine vollständige Integration ist strukturell schwer realisierbar.
-
-### Manueller Tagging-Aufwand
-
-DJs verbringen einen Großteil ihrer musikbezogenen Zeit mit organisatorischen Aufgaben. Professionelle DJs investieren 5-10 Stunden pro Woche in Bibliothekspflege. Diese Zeit fehlt für kreative Arbeit.
-
-Jeder Track erfordert manuelle Kategorisierung: Genre-Zuordnung, Energy-Level-Bewertung, Mood-Tags, Context-Tags für spezifische Anlässe. Bei großen Sammlungen (10.000+ Tracks) wird dieser Aufwand unbeherrschbar.
-
-### UI/UX-Probleme aktueller Software-Lösungen
-
-Bestehende DJ-Software konzentriert sich auf Live-Performance und vernachlässigt die Organisation. Listen-basierte Darstellungen bieten keinen Überblick bei großen Sammlungen. Such- und Filter-Funktionen sind limitiert und unflexibel.
-
-Textbasierte Navigation widerspricht der visuellen Orientierung von DJs. Album-Artwork fungiert als Haupterinnerung, wird aber in aktueller Software untergeordnet dargestellt.
-
-### Stress bei der Live-Performance durch ineffiziente Tracksuche
-
-Der kritischste Moment: Während eines Sets den passenden nächsten Track nicht zu finden. Alle Interviewpartner berichteten von solchen Situationen. Stress verstärkt sich durch zeitliche Limitierungen und Publikumsdruck.
-
-Schlechte Organisation führt zu problematischen Situationen während Auftritten. DJs können nicht spontan auf Publikumsreaktionen reagieren, wenn passende Tracks nicht schnell auffindbar sind.
-
-*[Abbildung 2.3: Pain Points Häufigkeitsverteilung - Kategorisierte Problembereiche]*
-
-## Organisationstechniken
-
-### Tagging
-
-Rekordbox und Serato bieten grundlegende Tagging-Funktionen. DJs nutzen Tags für Genre-Kategorisierung, Energy-Level-Bewertung oder Instrument-Kennzeichnung. 
-
-Problem: Die meisten Anbieter haben vorgegebene, starre Tag-Kategorien. Ausßerdem werden Tags inkonsistent vergeben und nach Monaten vergessen. Ohne systematischen Ansatz entstehen widersprüchliche Kategorien ("House" vs. "Deep House" vs. "House Music"). Jeder DJ entwickelt eigene Terminologie, die von Standard-Software schlecht unterstützt wird.
-
-### Ordnerstrukturen
-
-Viele DJs strukturieren ihre Sammlungen hierarchisch: "New Tracks", "Techno Peak Time", "Deep House Warm-up". Diese Systeme funktionieren bei wenigen hundert Tracks, kollabieren aber bei größeren Sammlungen.
-
-Ordner-basierte Organisation erzwingt eindeutige Zuordnungen. Ein Track kann nicht gleichzeitig "Minimal Techno" und "Afterhour" sein, obwohl beide Eigenschaften zutreffen. Diese Limitierung frustriert DJs bei komplexeren Organisationsanforderungen.
-
-### Kommentare
-
-Handschriftliche Ergänzungen sind besonders bei Vinyl-DJs verbreitet: Sticker und Notizen auf Plattenhüllen mit Informationen wie "Works after dark bassline track" oder "Good for summer sets". 
-
-Digital nutzen DJs Kommentar-Felder für kontextuelle Informationen: "Played at Club X 2023", "Good transition from Artist Y", "Crowd went wild". Diese wertvollen Metadaten sind schwer systematisch auswertbar.
-
-### Bewertungen
-
-Sterne-Bewertungen und Farbkodierungen dienen der schnellen Qualitäts-Einschätzung. Rekordbox-Farben werden für verschiedene Zwecke genutzt: Rot für Peak-Time-Tracks, Blau für Deep-Cuts, Grün für neue Entdeckungen.
-
-Problem: Bewertungssysteme sind subjektiv und kontextabhängig. Ein 5-Sterne-Track für Club-Sets kann bei Hochzeiten ungeeignet sein. Statische Bewertungen werden den verschiedenen Nutzungsszenarien nicht gerecht.
-
-## How Might We's
-
-### Um zu verstehen was die Nutzer brauchen
-
-Basierend auf den identifizierten Pain Points formulierten wir zentrale Designherausforderungen:
-
-**How might we** DJs helfen, große Musiksammlungen visuell zu erkunden?  
-Listen-Ansichten versagen bei 10.000+ Tracks. Räumliche Visualisierung könnte Überblick schaffen.
-
-**How might we** die Fragmentierung zwischen Discovery und Organisation reduzieren?  
-Medienbrüche zwischen Plattformen kosten täglich Zeit und führen zu Informationsverlust.
-
-**How might we** individuelle Organisationssysteme software-seitig unterstützen?  
-Jeder DJ entwickelt eigene Terminologie. Software muss diese Vielfalt abbilden können.
-
-**How might we** Live-Performance-Stress durch bessere Vorbereitung reduzieren?  
-Organisationsprobleme manifestieren sich kritisch während Auftritten unter Zeitdruck.
-
-**How might we** AI-Unterstützung anbieten, ohne kurative Kontrolle zu entziehen?  
-DJs fürchten Bevormundung. AI soll vorschlagen, nicht entscheiden.
-
-
-### Visualisierung der HMW durch Cards
-
-Die How Might We-Statements wurden auf physischen Karten dargestellt und nach Priorität und Machbarkeit geclustert. Dieser Ansatz half bei der Identifikation der wichtigsten Designherausforderungen für die Konzeptionsphase.
-
-*[Abbildung 2.4: How Might We Cards - Problem zu Lösungsweg Mapping]*
+Aus den sechs durchgeführten Interviews kristallisierten sich drei charakteristische Nutzertypen heraus, die unterschiedliche Herangehensweisen an DJ-Workflows repräsentieren. Diese Personas fassen die wichtigsten Erkenntnisse zu Arbeitsweisen, Bedürfnissen und Frustrationen zusammen und dienten als Grundlage für alle weiteren Design-Entscheidungen.
 
 ## Personas
 
@@ -293,6 +215,99 @@ Personas halfen bei der Bewertung von Designentscheidungen. Abstrakte Features w
 **Emotionen**: Professionelle Gelassenheit. Adrenalin bei Technik-Ausfällen.
 
 *[Abbildung 2.7: User Journey Samuel - Discovery bis Live Performance]* 
+
+## Pain Points
+
+### Medienwechsel unterbricht Workflow
+
+Alle DJs nutzen viele verschiedene Tools parallel. Ein typischer Discovery-Prozess verdeutlicht die Problematik: Instagram-Post → SoundCloud-Preview → Bandcamp-Kauf → iTunes-Import → Rekordbox-Organisation → USB-Export. Jeder Plattformwechsel birgt Verlustrisiken für Metadaten und unterbricht den kreativen Flow.
+
+Die Fragmentierung entsteht durch historisch gewachsene Strukturen. Musik wird über verschiedene Anbieter mit unterschiedlichen Bezahlsystemen bereitgestellt. Eine vollständige Integration ist strukturell schwer realisierbar.
+
+### Manueller Tagging-Aufwand
+
+DJs verbringen einen Großteil ihrer musikbezogenen Zeit mit organisatorischen Aufgaben. Professionelle DJs investieren 5-10 Stunden pro Woche in Bibliothekspflege. Diese Zeit fehlt für kreative Arbeit.
+
+Jeder Track erfordert manuelle Kategorisierung: Genre-Zuordnung, Energy-Level-Bewertung, Mood-Tags, Context-Tags für spezifische Anlässe. Bei großen Sammlungen (10.000+ Tracks) wird dieser Aufwand unbeherrschbar.
+
+### UI/UX-Probleme aktueller Software-Lösungen
+
+Bestehende DJ-Software konzentriert sich auf Live-Performance und vernachlässigt die Organisation. Listen-basierte Darstellungen bieten keinen Überblick bei großen Sammlungen. Such- und Filter-Funktionen sind limitiert und unflexibel.
+
+Textbasierte Navigation widerspricht der visuellen Orientierung von DJs. Album-Artwork fungiert als Haupterinnerung, wird aber in aktueller Software untergeordnet dargestellt.
+
+### Stress bei der Live-Performance durch ineffiziente Tracksuche
+
+Der kritischste Moment: Während eines Sets den passenden nächsten Track nicht zu finden. Alle Interviewpartner berichteten von solchen Situationen. Stress verstärkt sich durch zeitliche Limitierungen und Publikumsdruck.
+
+Schlechte Organisation führt zu problematischen Situationen während Auftritten. DJs können nicht spontan auf Publikumsreaktionen reagieren, wenn passende Tracks nicht schnell auffindbar sind.
+
+*[Abbildung 2.3: Pain Points Häufigkeitsverteilung - Kategorisierte Problembereiche]*
+
+## Organisationstechniken
+
+### Tagging
+
+Rekordbox und Serato bieten grundlegende Tagging-Funktionen. DJs nutzen Tags für Genre-Kategorisierung, Energy-Level-Bewertung oder Instrument-Kennzeichnung. 
+
+Problem: Die meisten Anbieter haben vorgegebene, starre Tag-Kategorien. Außerdem werden Tags inkonsistent vergeben und nach Monaten vergessen. Ohne systematischen Ansatz entstehen widersprüchliche Kategorien ("House" vs. "Deep House" vs. "House Music"). Jeder DJ entwickelt eigene Terminologie, die von Standard-Software schlecht unterstützt wird.
+
+### Ordnerstrukturen
+
+Viele DJs strukturieren ihre Sammlungen hierarchisch: "New Tracks", "Techno Peak Time", "Deep House Warm-up". Diese Systeme funktionieren bei wenigen hundert Tracks, kollabieren aber bei größeren Sammlungen.
+
+Ordner-basierte Organisation erzwingt eindeutige Zuordnungen. Ein Track kann nicht gleichzeitig "Minimal Techno" und "Afterhour" sein, obwohl beide Eigenschaften zutreffen. Diese Limitierung frustriert DJs bei komplexeren Organisationsanforderungen.
+
+### Kommentare
+
+Handschriftliche Ergänzungen sind besonders bei Vinyl-DJs verbreitet: Sticker und Notizen auf Plattenhüllen mit Informationen wie "Works after dark bassline track" oder "Good for summer sets". 
+
+Digital nutzen DJs Kommentar-Felder für kontextuelle Informationen: "Played at Club X 2023", "Good transition from Artist Y", "Crowd went wild". Diese wertvollen Metadaten sind schwer systematisch auswertbar.
+
+### Bewertungen
+
+Sterne-Bewertungen und Farbkodierungen dienen der schnellen Qualitäts-Einschätzung. Rekordbox-Farben werden für verschiedene Zwecke genutzt: Rot für Peak-Time-Tracks, Blau für Deep-Cuts, Grün für neue Entdeckungen.
+
+Problem: Bewertungssysteme sind subjektiv und kontextabhängig. Ein 5-Sterne-Track für Club-Sets kann bei Hochzeiten ungeeignet sein. Statische Bewertungen werden den verschiedenen Nutzungsszenarien nicht gerecht.
+
+## How Might We's
+
+### Um zu verstehen was die Nutzer brauchen
+
+Basierend auf den identifizierten Pain Points formulierten wir zentrale Designherausforderungen:
+
+**How might we** DJs helfen, große Musiksammlungen visuell zu erkunden?  
+Listen-Ansichten versagen bei 10.000+ Tracks. Räumliche Visualisierung könnte Überblick schaffen.
+
+**How might we** die Fragmentierung zwischen Discovery und Organisation reduzieren?  
+Medienbrüche zwischen Plattformen kosten täglich Zeit und führen zu Informationsverlust.
+
+**How might we** individuelle Organisationssysteme software-seitig unterstützen?  
+Jeder DJ entwickelt eigene Terminologie. Software muss diese Vielfalt abbilden können.
+
+**How might we** Live-Performance-Stress durch bessere Vorbereitung reduzieren?  
+Organisationsprobleme manifestieren sich kritisch während Auftritten unter Zeitdruck.
+
+**How might we** AI-Unterstützung anbieten, ohne kurative Kontrolle zu entziehen?  
+DJs fürchten Bevormundung. AI soll vorschlagen, nicht entscheiden.
+
+### How Might We's als Leitplanken
+
+Die How Might We-Statements dienten während des gesamten Entwicklungsprozesses als konstante Referenz und Orientierung. Anstatt sie einmalig zu kategorisieren, kamen wir immer wieder auf sie zurück - bei Feature-Entscheidungen, UI-Entwürfen und technischen Implementierungen.
+
+**Kontinuierliche Validierung**  
+Bei jeder Design-Entscheidung stellten wir die Frage: "Welches How Might We adressiert das?" Features, die keines der identifizierten Probleme lösten, wurden hinterfragt oder verworfen.
+
+**Prioritäten durch Wiederholung**  
+Manche How Might We's tauchten häufiger auf als andere. "Große Musiksammlungen visuell erkunden" wurde zum zentralen Leitmotiv, da es in fast allen Entwicklungsphasen relevant war - von der Konzeption über das Interface-Design bis zur technischen Umsetzung.
+
+**Inspiration für konkrete Lösungen**  
+Statt abstrakte Anforderungen zu bleiben, inspirierten die How Might We's konkrete Features: "Individuelle Organisationssysteme unterstützen" führte zum MY TAGS System, "AI-Unterstützung ohne Kontrollverlust" zum Augmentation-statt-Automation-Prinzip.
+
+**Zentrale Erkenntnis**  
+Die häufigste Wiederverwendung fand "Wie können wir DJs helfen, große Musiksammlungen visuell zu erkunden?" - dieser Leitfaden zog sich durch alle Projektphasen und wurde zum Kern-Feature unseres Konzepts: die 2D-Visualisierung.
+
+*[Abbildung 2.4: How Might We Cards - Problem zu Lösungsweg Mapping]*
 
 ## Competitor Analyse
 

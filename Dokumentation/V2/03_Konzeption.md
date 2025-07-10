@@ -2,7 +2,13 @@
 
 ## Kano Modell
 
-Das Kano-Modell half bei der strategischen Feature-Priorisierung basierend auf den Interview-Erkenntnissen und Nutzererwartungen.
+Nach der umfangreichen Recherche mit sechs DJ-Interviews und der Analyse bestehender Tools entstanden zahlreiche Feature-Ideen für das AI-gestützte Musikverwaltungssystem. Das Kano-Modell bot einen systematischen Rahmen, um aus dieser Fülle von Möglichkeiten die richtige Priorisierung zu entwickeln.
+
+**Warum das Kano-Modell für DJ-Software relevant ist**  
+DJs haben unterschiedliche Erwartungen an neue Tools. Manche Features sind selbstverständlich erwartet (Must-Haves), andere schaffen echten Mehrwert (Performance Features), und wenige erzeugen Begeisterung (Excitement Features). Das Kano-Modell hilft dabei, diese Kategorien zu unterscheiden und Entwicklungsressourcen strategisch zu verteilen.
+
+**Anwendung auf DJ-Tool-Entwicklung**  
+Basierend auf den Interview-Erkenntnissen und Nutzererwartungen kategorisierten wir alle potentiellen Features nach ihrer Wirkung auf die Nutzerzufriedenheit. Diese Kategorisierung wurde zur Grundlage für die MVP-Definition und die Entwicklungsphasen-Planung.
 
 **Must-Have Features (Basis-Anforderungen)**  
 - Automatische BPM/Key-Analyse für Mix-Kompatibilität
@@ -32,15 +38,15 @@ Das Kano-Modell half bei der strategischen Feature-Priorisierung basierend auf d
 Die Priorisierung folgte den Persona-Bedürfnissen und technischer Machbarkeit:
 
 **Phase 1: Kern-Funktionalität (MVP)**  
-Basis-Audio-Analyse, einfache Ähnlichkeitsberechnung, rudimentäre Organisation. Fokus auf technische Validierung der AI-Pipeline.
+Basis-Audio-Analyse, einfache Ähnlichkeitsberechnung, rudimentäre Organisation. Fokus auf technische Validierung der AI-Pipeline und Machbarkeitsbeweis.
 
-**Phase 2: Enhanced Organisation**  
-MY TAGS System, verbesserte Visualisierung, erweiterte Filter. Schwerpunkt auf Nutzer-Experience und Workflow-Integration.
+**Phase 2: Vollständige Feature-Implementierung**  
+MY TAGS System, 2D-Map-Visualisierung, adaptive Lernsysteme, erweiterte Filter und Export-Integration. Schwerpunkt auf Nutzer-Experience, Workflow-Integration und vollständige Feature-Set-Umsetzung.
 
-**Phase 3: Advanced Features**  
-2D-Map-Visualisierung, adaptive Lernsysteme, Export-Integration. Vollständige Feature-Set-Implementierung.
+Diese zweiphasige Entwicklung ermöglichte iterative Entwicklung mit kontinuierlicher Nutzer-Validierung.
 
-Diese Staffelung ermöglichte iterative Entwicklung mit kontinuierlicher Nutzer-Validierung.
+**Von Feature-Priorisierung zu Metadaten-Architektur**  
+Die Kano-Analyse zeigte, dass alle priorisierten Features - von Basic Audio-Analyse bis hin zur 2D-Visualisierung - auf einer fundierten Metadaten-Grundlage basieren. Intelligente Genre-Klassifikation, personalisierbare Tags und ähnlichkeits-basierte Empfehlungen erfordern verschiedene Arten von Musik-Metadaten. Bevor die Features implementiert werden konnten, mussten wir verstehen: Welche Metadaten lassen sich automatisch extrahieren? Welche erfordern menschliche Interpretation? Und wie können beide Arten intelligent kombiniert werden?
 
 ## Metadaten
 
@@ -115,7 +121,24 @@ Musiksammlungen haben natürliche Ungleichgewichte. Techno-DJs besitzen mehr Ele
 
 Style-Features erhalten Gewichtung 1.0 als primärer Differenzierungsfaktor. Genre-Features bekommen Gewichtung 0.2 um Dominanz einzelner Genres zu reduzieren. Mood-Features erhalten Gewichtung 0.1 als ergänzende Information.
 
-*[Abbildung 3.4: Feature-Extraktion Pipeline - Multi-Model AI Approach]*
+### Class-Imbalance in DJ-Musiksammlungen
+
+Die Analyse einer repräsentativen DJ-Library mit 1.346 Tracks offenbarte signifikante Ungleichgewichte in der Genre-Verteilung, die typisch für spezialisierte DJ-Sammlungen sind.
+
+**Techno-Dominanz mit solider Ähnlichkeitsverteilung**  
+Techno als dominierendes Genre (Rang #1, 1.317 Titel) zeigt eine bemerkenswert gleichmäßige Wahrscheinlichkeitsverteilung mit einem Peak um 0.85. Diese normalverteilte Kurve deutet auf eine kohärente, stilistisch konsistente Sammlung hin, bei der die AI-Modelle zuverlässige Ähnlichkeitsbewertungen liefern können.
+
+**Electro-Problematik: Extreme Schiefe**  
+Im Gegensatz dazu zeigt Electro (Rang #2, 1.160 Titel) eine stark verzerrte Verteilung mit einem massiven Peak bei sehr niedrigen Wahrscheinlichkeiten (nahe 0.0). Diese extreme Linksschiefe deutet auf problematische Genre-Überschneidungen hin - viele als "Electro" klassifizierte Tracks werden vom AI-Modell als stilistisch inkonsistent bewertet.
+
+**Class-Balancing als Lösungsansatz**  
+Diese Analyse verdeutlichte ein fundamentales Problem bei der automatischen Musikklassifikation: Während etablierte, kohärente Genres wie Techno zuverlässig organisiert werden können, leiden weniger konsistente oder überlappende Kategorien unter der dominanten Genre-Gewichtung. In den analysierten Top 10 Genres zeigt keiner eine so solide, normalverteilte Ähnlichkeitsstruktur wie Techno.
+
+**Implementierte Lösung: Adaptive Genre-Gewichtung**  
+Um diese Ungleichgewichte zu kompensieren, implementierten wir ein Class-Balancing-System, das genre-spezifische Charakteristika berücksichtigt statt nur die reine Häufigkeit eines Stils. Das System analysiert die Wahrscheinlichkeitsverteilungen jedes Genres und passt die Gewichtungen entsprechend an - Genres mit extremer Schiefe wie Electro erhalten niedrigere Gewichtungen, während kohärente Genres wie Techno ihre Gewichtung beibehalten. Dadurch werden auch weniger vertretene oder stilistisch inkonsistente Genres fair in der Ähnlichkeitsberechnung repräsentiert.
+
+*[Abbildung 3.4: Feature-Extraktion Pipeline - Multi-Model AI Approach]*  
+*[Abbildung 3.5: Class-Imbalance Analyse - Wahrscheinlichkeitsverteilungen Techno vs. Electro]*
 
 ## Mentale Modelle der Klassifizierung
 

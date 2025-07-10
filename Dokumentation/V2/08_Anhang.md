@@ -11,6 +11,7 @@
 ### Usability Tests
 - Steve (28 Jahre, Hobby-DJ): Usability Test vom 10.05.2024, Erkenntnisse dokumentiert
 - Carsten (34 Jahre, Semi-Professional DJ): Usability Test vom 12.05.2024, Erkenntnisse dokumentiert
+- Lisa Friedrich: Usability Test vom 14.05.2024, Erkenntnisse dokumentiert
 
 ### Software-Analyse
 - Rekordbox 6.7.1: Competitive Analysis April 2024
@@ -90,17 +91,21 @@ Abbildung 7.6: Wissenschaftlicher Beitrag - Design-Research Erkenntnisse .......
 
 Besonderer Dank gilt allen DJ-Interview-Teilnehmern, die ihre Zeit und Expertise großzügig geteilt haben: Pino Peña, DJ Danik, Concussion, Townes, Polygonia und Toobris. Ihre ehrlichen Einblicke in DJ-Workflows und -Probleme bildeten das Fundament dieser Arbeit.
 
-Den Usability-Test-Teilnehmern Steve und Carsten danken wir für konstruktives Feedback und geduldige Iterationen während der Prototyping-Phase.
+Wir danken unseren Betreuern Prof. David Oswald und Prof. Michael Schuster für ihre methodische Unterstützung und kritische Reflexion der Forschungsansätze. Die interdisziplinäre Perspektive zwischen Design, Technologie und Musikkultur war entscheidend für den Projekterfolg. Zusätzlich danken wir Prof. Jens Döring und Prof. Ulf Harr für ihre wertvollen Experteninterviews und Einschätzungen, die zur Vertiefung unserer Forschung beitrugen.
 
-Dank an die Betreuenden für methodische Unterstützung und kritische Reflexion der Forschungsansätze. Die interdisziplinäre Perspektive zwischen Design, Technologie und Musikkultur war entscheidend für den Projekterfolg.
+Den Usability-Test-Teilnehmern Steve, Carsten und Lisa Friedrich danken wir für ihr konstruktives Feedback und ihre geduldige Unterstützung während der Prototyping-Phase.
 
-Der DJ-Community auf Reddit, Discord und in lokalen Kollektiven danken wir für informelle Diskussionen und Validierung unserer Problemanalyse.
+Besonderer Dank gilt auch Bryan Müller (Skee Mask) für seine kritische Einschätzung zur Nutzung von KI in der Musikklassifizierung. Seine Perspektive trug maßgeblich zur Weiterentwicklung unseres zweiten Prototyps bei und lenkte den Fokus darauf, DJs beim Aufbau eigener Terminologien zu unterstützen und einen tieferen Bezug zur Musik zu schaffen, anstatt sich auf automatisierte Klassifizierung zu beschränken.
+
+
 
 ## Eidesstattliche Versicherung
 
-Hiermit versichern wir an Eides statt, dass wir die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel verwendet haben. Alle Stellen, die aus Quellen entnommen wurden, sind als solche kenntlich gemacht. Diese Arbeit hat in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegen.
+Für die Erstellung der Dokumentatio nahmen wir Claude von Anthropic zur Hilfe. Das Tool half uns, Texte zu verfassen, zu strukturieren und Argumentationen zu verfeinern. 
 
-_____________________  
+Hiermit versichere ich, dass ich die vorliegende Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel verwendet habe. Alle Ausführungen, die wörtlich oder sinngemäß übernommen wurden, sind als solche gekennzeichnet.
+
+_____________________
 Ort, Datum
 
 _____________________          _____________________  
